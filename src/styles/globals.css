@@ -26,3 +26,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+

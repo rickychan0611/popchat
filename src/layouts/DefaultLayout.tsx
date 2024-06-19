@@ -5,13 +5,13 @@ import Footer from "@/components/Footer";
 const DefaultLayout: React.FC<{ children: any }> = ({ children }) => {
 
   return (
-    <>
+    <div className="bg-white">
       <AppBar />
       {/* <Container> */}
       {children}
       {/* </Container> */}
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { getLayout } from "@/layouts/DefaultLayout";
-
+import ResponsiveImage from "@/components/ResponsiveImage";
 const Home = () => {
+
   return (
     <main className={`flex min-h-screen flex-col items-center justify-between bg-black`} >
       <div className="flex relative w-full h-full pt-24 flex-col pb-28"
@@ -12,16 +13,13 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
-        <div className="flex w-auto h-[300px] relative items-center justify-between">
-          <Image src="/briefIntroduction.png" fill className="object-contain" alt="AI face swapping for 1 on 1 live streaming" />
-        </div>
-        <div className="w-full flex justify-center">
-          <div className="flex w-[1000px] h-[555px] justify-center items-center p-2 rounded-[30px] mt-20"
-            style={{
-              backgroundImage: "linear-gradient(to right, #FF1CF7, #00F0FF)",
-            }}>
-            <div className="flex w-[100%] h-[100%] relative">
-              <Image src="/main-1.jpg" fill className="object-cover rounded-[25px]" alt="AI face swapping for 1 on 1 live streaming" />
+        <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
+          <ResponsiveImage src="/briefIntroduction.png" className="rounded-[25px]" />
+          <div className="w-full flex justify-center mt-6">
+            <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 sm:mt-20 
+               p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
+            >
+              <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />
             </div>
           </div>
         </div>
@@ -29,7 +27,7 @@ const Home = () => {
 
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center p-20"
+      <div className="flex relative w-full h-full flex-row justify-center sm:p-20"
         style={{
           backgroundImage: "url('/bg-2.jpg')",
           backgroundRepeat: 'no-repeat',
@@ -40,7 +38,7 @@ const Home = () => {
         <div className="flex flex-col sm:flex-row relative w-full max-w-5xl p-4 ">
 
           {/* left heart logo column */}
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/2">
+          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-20">
             <div className="mt-20 mb-10">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[50px] font-serif">
@@ -51,16 +49,30 @@ const Home = () => {
             </div>
           </div>
 
-          {/* right video column */}
-          <div className="w-full sm:w-[340px] sm:absolute right-0 bottom-[-200px] justify-center flex">
-            <div className="relative ">
-              <Image src="/frame.png" width={400} height={830} alt="frame" />
-              <div className="absolute bottom-8 right-4 ml-[-120px]">
-                <Image src="/video-graphics.png" width={600} height={430} alt="graphics" />
+          {/* right video */}
+          <div className="flex flex-1 justify-center items-center relative">
+
+            <div className="rounded-[40px] w-[340px] h-[720px] absolute top-0 sm:top-[100px]">
+              <video controls={false} autoPlay muted loop
+                className="w-full h-full object-cover rounded-[50px]"
+              >
+                <source src="/1on1.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div className="rounded-[30px] w-[350px] h-[730px] sm:absolute top-[95px]">
+              <div className="w-[350px] h-[730px] relative">
+                <Image src="/frame.png" fill sizes="100%" alt="frame" className="z-40" />
+              </div>
+
+              <div className="absolute bottom-8 ml-[-50px] sm:ml-[-80px]">
+                <div className="w-[420px] h-[250px] relative scale-90 z-40">
+                  <Image src="/video-graphics.png" fill sizes="100%" alt="frame" className="z-40" />
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -79,11 +91,17 @@ const Home = () => {
         <div className="flex w-full max-w-5xl flex-col lg:flex-row mt-10 sm:mt-40 px-4 gap-4">
 
           <div className="flex flex-1 justify-center items-center">
-            <div className="bg-blue-600 rounded-[30px] w-[400px] h-[730px]">
+            <div className="rounded-[30px] w-[400px] h-[730px]">
+              <video controls={false} autoPlay muted loop
+                className="w-full h-full object-cover rounded-[40px]"
+              >
+                <source src="/privateShow.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
-          <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0">
+          <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0 text-white">
             <div className="flex flex-col">
               <div className="w-[320px] h-[245px] relative">
                 <Image src="/privateShow.png" fill sizes="100%" alt="private show" className="object-contain" />
@@ -116,7 +134,7 @@ const Home = () => {
         </div>
 
         {/* Chat with Fans Using an AI Persona */}
-        <div className="flex relative w-full max-w-5xlh-full flex-col-reverse sm:flex-row justify-center items-center mt-40 p-4 py-20 gap-4"
+        <div className="text-white flex relative w-full max-w-5xlh-full flex-col-reverse sm:flex-row justify-center items-center mt-40 p-4 py-20 gap-4"
           style={{
             backgroundImage: "url('/bg-4.png')",
             backgroundRepeat: 'no-repeat',
@@ -147,7 +165,7 @@ const Home = () => {
         <p className="font-serif text-[55px] italic leading-[50px]  text-[#7e318d] font-bold my-20">
           Chat with ME
         </p>
-        <Image src="/chat1.png" width={523} height={720} alt="ai-icon" className="mb-20"/>
+        <Image src="/chat1.png" width={523} height={720} alt="ai-icon" className="mb-20" />
         <Image src="/chat2.png" width={523} height={720} alt="ai-icon" className="mb-20" />
         <Image src="/chat3.png" width={523} height={720} alt="ai-icon" className="mb-0" />
 

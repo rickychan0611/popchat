@@ -6,9 +6,9 @@ const DefaultLayout: React.FC<{ children: any }> = ({ children }) => {
 
   return (
     <>
-        <AppBar />
+      <AppBar />
       {/* <Container> */}
-        {children}
+      {children}
       {/* </Container> */}
       <Footer />
     </>

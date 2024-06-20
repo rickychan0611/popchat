@@ -49,19 +49,28 @@ const Footer = (props: Props) => {
               onClick={() => sendEmail()}>Contact</p>
             <p className='text-[#3ECFEF] cursor-pointer'
               onClick={() => router.push('/about')}>About</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>FAQ</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>Terms</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>Privacy Policy</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>Affiliate</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+            onClick={() => router.push('/faq')}>FAQ</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/about')}>Terms</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/privacy-policy')}>Privacy Policy</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => sendEmail()}>Affiliate</p>
           </div>
         </div>
         <div className='flex flex-1 justify-center mb-6 text-center lg:text-left'>
           <div className='flex flex-col gap-4 mt-6'>
-            <p className='text-[#3ECFEF] cursor-pointer'>6 Proposals for Hosts</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>Host Guide</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>Host Basic Rules</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>12 Prohibited Rules</p>
-            <p className='text-[#3ECFEF] cursor-pointer'>Parental Control Guide</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/proposalsHosts')}>6 Proposals for Hosts</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/host-guide')}>Host Guide</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/host-rules')}>Host Basic Rules</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/prohibited-rules')}>12 Prohibited Rules</p>
+            <p className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/parental-control-guide')}>Parental Control Guide</p>
           </div>
         </div>
 

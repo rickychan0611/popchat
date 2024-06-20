@@ -80,8 +80,10 @@ const Footer = (props: Props) => {
           <div className='flex flex-col justify-center items-center gap-4'>
             <Image src="/qrcode.png" width={150} height={150} alt="logo" className='object-contain' />
             <div className='flex flex-col xl:flex-row gap-4 mt-4'>
-              <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain' />
-              <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain' />
+              <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer' 
+              onClick={() => alert("Coming soon to the Google Play Store. Stay tuned!")}/>
+              <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer' 
+              onClick={() => router.push('/addIcon')}/>
             </div>
             <p className='font-serif text-2xl text-white'>Download now</p>
           </div>

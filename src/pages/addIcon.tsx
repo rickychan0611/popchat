@@ -6,8 +6,8 @@ const AddToHomeScreen = () => {
     <div className="bg-black min-h-screen pb-12 pt-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">How to AIME to Your iOS Home Screen</h2>
-          <p className="mt-4 text-lg text-gray-400">Follow these simple steps to add our website to your iPhone or iPad home screen.</p>
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">How to AI ME to Your iOS Home Screen</h2>
+          <p className="mt-4 text-lg text-gray-400">Follow these simple 3 steps to add our website to your iPhone or iPad home screen.</p>
         </div>
 
         <div className="mt-12 space-y-10">
@@ -22,7 +22,7 @@ const AddToHomeScreen = () => {
 
           {/* Step 1 */}
           <div className="bg-white overflow-hidden shadow rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900">Step 2: Tap the Share Button</h3>
+            <h3 className="text-xl font-semibold text-gray-900">Step 1: Tap the Share Button</h3>
             <p className="mt-2 text-gray-600">Tap the Share button at the bottom of the Safari window (the square with an arrow pointing out of it).</p>
             <div className="mt-4 flex justify-center relative">
               <ResponsiveImage src="/s1.jpg" />
@@ -31,7 +31,7 @@ const AddToHomeScreen = () => {
 
           {/* Step 2 */}
           <div className="bg-white overflow-hidden shadow rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900">Step 3: Add to Home Screen</h3>
+            <h3 className="text-xl font-semibold text-gray-900">Step 2: Add to Home Screen</h3>
             <p className="mt-2 text-gray-600">In the Share menu, scroll down and tap "Add to Home Screen".</p>
             <div className="mt-4 flex justify-center relative">
               <ResponsiveImage src="/s2.jpg" />
@@ -40,7 +40,7 @@ const AddToHomeScreen = () => {
 
           {/* Step 3 */}
           <div className="bg-white overflow-hidden shadow rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900">Step 4: Confirm and Add</h3>
+            <h3 className="text-xl font-semibold text-gray-900">Step 3: Confirm and Add</h3>
             <p className="mt-2 text-gray-600">In the next screen, you can rename the icon if you want. Then, tap "Add" in the top right corner.</p>
             <div className="mt-4 flex justify-center relative">
               <ResponsiveImage src="/s3.jpg" />

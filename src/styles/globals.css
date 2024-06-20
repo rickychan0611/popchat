@@ -17,7 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: black;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -41,3 +41,27 @@ h3 {
   font-weight: bold;
 }
 
+/* Style for the outer ul */
+ul {
+  list-style-type: disc; /* Type of bullet point (disc, circle, square, etc.) */
+  margin-left: 20px; /* Indentation from the left */
+  padding-left: 20px; /* Padding inside the ul */
+}
+
+ol {
+  counter-reset: list-counter; /* Reset the counter for the ol */
+  list-style-type: decimal; /* Type of numbering (decimal, lower-alpha, upper-roman, etc.) */
+  margin-left: 20px; /* Indentation from the left */
+  padding-left: 20px; /* Padding inside the ol */
+}
+/* Style for list items (li) */
+li {
+  margin-bottom: 8px; /* Space between each list item */
+  font-size: 16px; /* Font size of list items */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+/* Nested ul style */
+ul ul {
+  list-style-type: circle; /* Different bullet point for nested lists */
+}

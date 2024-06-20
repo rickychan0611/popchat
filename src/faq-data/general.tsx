@@ -34,7 +34,33 @@ export const general = [
     "answer": "The decision to block a user is completely up to the model. Only models can unblock users, and our team cannot interfere with this or contact any model on behalf of a user."
   },
   {
-    question: 'How do I register to become a host?',
-    answer: <AIMeScore />
-  },
+    question: "Photo and Video Rules",
+    answer: (
+      <div>
+        <h4>1. Public Album Uploads:</h4>
+        <ul>
+          <li>Users can make their albums publicly available.</li>
+          <li>To upload pictures of yourself in a public album, you must upload documents for verification.</li>
+          <li>Photos without verified documents can also be uploaded but cannot contain human figures.</li>
+        </ul>
+        <h4>2. Allowed Photo Types:</h4>
+        <ul>
+          <li>Users can upload avatars, backgrounds, and album photos.</li>
+        </ul>
+        <h4>3. Photo Content Regulations:</h4>
+        <ul>
+          <li>Explicit nudity and sex toys are prohibited in avatars.</li>
+          <li>Users can upload random images (e.g., cars, houses, favorite pictures) as avatars, album photos, or backgrounds, as long as they do not violate platform rules.</li>
+        </ul>
+        <h4>4. Rules for People in Uploaded Content:</h4>
+        <ul>
+          <li>Only individuals registered to the account are permitted to appear in the uploaded content. Any other person will be considered unregistered, which violates the site’s rules.</li>
+        </ul>
+        <h4>5. Infringement Liability:</h4>
+        <ul>
+          <li>Photos must not infringe on the rights of others. Users are responsible for any infringements, which may result in account suspension.</li>
+        </ul>
+      </div>
+    )
+  }  
 ]

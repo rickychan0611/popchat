@@ -77,7 +77,7 @@ const Footer = (props: Props) => {
         <div className='flex flex-1 justify-center lg:justify-end'>
           <div className='flex flex-col justify-center items-center gap-4'>
             <Image src="/qrcode.png" width={150} height={150} alt="logo" className='object-contain' />
-            <div className='flex flex-row gap-4 mt-4'>
+            <div className='flex flex-col xl:flex-row gap-4 mt-4'>
               <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain' />
               <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain' />
             </div>

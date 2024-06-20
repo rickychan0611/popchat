@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { getLayout } from "@/layouts/DefaultLayout";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { Router } from "lucide-react";
+import { useRouter } from "next/router";
 const Home = () => {
+
+  const router = useRouter();
 
   return (
     <main className={`flex min-h-screen flex-col items-center justify-between bg-black`} >
-      <div className="flex relative w-full h-full pt-24 flex-col pb-28"
+      <div className="flex relative w-full h-full pt-24 flex-col pb-4 sm:pb-28"
         style={{
           backgroundImage: "url('/bg-1.jpg')",
           backgroundRepeat: 'no-repeat',
@@ -25,6 +29,14 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="sm:hidden block">
+        <div className='flex flex-row gap-4 mt-4 mb-2'>
+          <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain' />
+          <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain' 
+          onClick={() => router.push('/addIcon')}/>
+        </div>
+        <p className='font-serif text-2xl text-white mb-4 text-center'>Download now</p>
+      </div>
 
       {/* section 2 */}
       <div className="flex relative w-full h-full flex-row justify-center sm:p-20"
@@ -39,7 +51,7 @@ const Home = () => {
 
           {/* left heart logo column */}
           <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-20">
-            <div className="mt-20 mb-10">
+            <div className="sm:mt-20 mb-10">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[50px] font-serif">
                 <span className="italic">1-on-1 Live</span>: Private Room</p>
@@ -53,7 +65,7 @@ const Home = () => {
           <div className="flex flex-1 justify-center items-center relative">
 
             <div className="rounded-[40px] w-[340px] h-[720px] absolute top-0 sm:top-[100px]">
-              <video controls={false} autoPlay muted loop
+              <video controls={false} autoPlay muted loop playsInline 
                 className="w-full h-full object-cover rounded-[50px]"
               >
                 <source src="/1on1.mov" type="video/mp4" />
@@ -92,7 +104,7 @@ const Home = () => {
 
           <div className="flex flex-1 justify-center items-center">
             <div className="rounded-[30px] w-[400px] h-[730px]">
-              <video controls={false} autoPlay muted loop
+              <video controls={false} autoPlay muted loop playsInline
                 className="w-full h-full object-cover rounded-[40px]"
               >
                 <source src="/privateShow.mov" type="video/mp4" />

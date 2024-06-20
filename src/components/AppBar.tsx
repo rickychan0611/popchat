@@ -36,9 +36,16 @@ const AppBar = (props: Props) => {
                   <Image src="/qrcode.png" width={150} height={150} alt="logo" className='object-contain' />
                   <div className='flex flex-col  gap-4 '>
                     <Image src="/andriod.png" width={170} height={60} alt="logo" className='object-contain cursor-pointer'
-                      onClick={() => alert("Coming soon to the Google Play Store. Stay tuned!")} />
+                      onClick={() => {
+                        alert("Coming soon to the Google Play Store. Stay tuned!")
+                        setOpen(false)
+                      }
+                      } />
                     <Image src="/apple.png" width={170} height={60} alt="logo" className='object-contain cursor-pointer'
-                      onClick={() => router.push('/addIcon')} />
+                      onClick={() => {
+                        setOpen(false)
+                        router.push('/addIcon')
+                      }} />
                   </div>
                 </div>
               </div>

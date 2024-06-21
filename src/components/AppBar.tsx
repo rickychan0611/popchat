@@ -1,3 +1,4 @@
+import { H5_URL } from '@/constants/constant'
 import { Globe, Router } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -24,7 +25,7 @@ const AppBar = (props: Props) => {
           <div className='tracking-wide text-[16px] cursor-pointer'
             onClick={() => router.push('/pricing')}>PRICING</div>
           <div className='relative'>
-            <div className='tracking-wide text-sm cursor-pointer'
+            <div className='tracking-wide text-[16px] cursor-pointer'
               onClick={() => { setOpen(!open) }}
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => setOpen(false)}
@@ -39,7 +40,7 @@ const AppBar = (props: Props) => {
               }}
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => setOpen(false)}
-              >
+            >
               <div className='flex flex-1 justify-center'>
                 <div className='flex flex-col justify-center items-center gap-4'>
                   <Image src="/qrcode.png" width={150} height={150} alt="logo" className='object-contain' />
@@ -67,10 +68,10 @@ const AppBar = (props: Props) => {
             <Globe />
             <p>EN</div>
           </div> */}
-          <div onClick={() => router.push('https://aime.hellokit.uk/login')} className="cursor-pointer">
+          <div onClick={() => router.push(H5_URL)} className="cursor-pointer">
             LOG IN</div>
           <div className='px-4 py-1 rounded cursor-pointer'
-            onClick={() => router.push('https://aime.hellokit.uk/login')}
+            onClick={() => router.push(H5_URL)}
             style={{
               backgroundImage: "linear-gradient(to right, #FF1CF7, #00F0FF)",
             }}>Sign up</div>

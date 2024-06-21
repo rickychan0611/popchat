@@ -1,4 +1,4 @@
-import { H5_URL } from '@/constants/constant'
+import { Android_Download, H5_URL } from '@/constants/constant'
 import { Globe, Router } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -47,7 +47,7 @@ const AppBar = (props: Props) => {
                   <div className='flex flex-col  gap-4 '>
                     <Image src="/andriod.png" width={170} height={60} alt="logo" className='object-contain cursor-pointer'
                       onClick={() => {
-                        router.push("https://onlyforyou.live/api/android/download")
+                        router.push(Android_Download)
                         setOpen(false)
                       }
                       } />

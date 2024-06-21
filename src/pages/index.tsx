@@ -4,7 +4,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import { Router } from "lucide-react";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { H5_URL } from "@/constants/constant";
+import { Android_Download, H5_URL } from "@/constants/constant";
 const Home = () => {
 
   const router = useRouter();
@@ -21,7 +21,7 @@ const Home = () => {
         <div className="flex flex-col gap-2 ml-4">
           <Image src="/andriod.png" width={200} height={55} alt="android" className='object-contain cursor-pointer'
             onClick={() => {
-              router.push("https://onlyforyou.live/api/android/download")
+              router.push(Android_Download)
             }
             } />
           <Image src="/apple.png" width={200} height={55} alt="ios" className='object-contain cursor-pointer'
@@ -232,7 +232,7 @@ const Home = () => {
               <div className="flex flex-col gap-2 ml-4">
                 <Image src="/andriod.png" width={200} height={55} alt="android" className='object-contain cursor-pointer'
                   onClick={() => {
-                    router.push("https://onlyforyou.live/api/android/download")
+                    router.push(Android_Download)
                   }
                   } />
                 <Image src="/apple.png" width={200} height={55} alt="ios" className='object-contain cursor-pointer'

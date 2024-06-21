@@ -1,3 +1,4 @@
+import { Android_Download } from '@/constants/constant'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
@@ -82,7 +83,7 @@ const Footer = (props: Props) => {
             <div className='flex flex-col xl:flex-row gap-4 mt-4'>
               <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'
                 onClick={() => {
-                  router.push("https://onlyforyou.live/api/android/download")
+                  router.push(Android_Download)
                 }
                 } />
               <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'

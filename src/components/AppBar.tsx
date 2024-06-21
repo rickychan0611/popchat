@@ -13,13 +13,13 @@ const AppBar = (props: Props) => {
     <div className='fixed flex flex-1 w-full h-[80px] flex-row justify-between items-center p-2 z-50 text-white bg-[#2B2E39]'
     >
       <div className='z-50 flex flex-1 w-full flex-row justify-between items-center'>
-        <div className='flex flex-row items-center gap-4 ml-2 cursor-pointer'
+        <div className='flex flex-row items-center gap-4 ml-0 sm:ml-2 cursor-pointer'
           onClick={() => router.push('/')}>
           <Image src={"/logo.png"} width={48} height={48} alt="logo" />
           <div className='font-noto_serif font-bold cursor-pointer text-[16px]'
           >1ON1 CHAT</div>
         </div>
-        <div className='sm:flex flex-1 flex-row justify-between items-center  hidden mx-8'>
+        <div className='sm:flex flex-1 flex-row justify-between items-center  hidden max-w-[400px] mx-4'>
           <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 '
             onClick={() => router.push('/why-aime')}>WHY AI ME</div>
           <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 mx-4 '
@@ -63,14 +63,14 @@ const AppBar = (props: Props) => {
 
           </div>
         </div>
-        <div className='flex flex-row items-center gap-8 pr-4'>
+        <div className='flex flex-row justify-end items-center gap-2 sm:gap-8 pr-2 sm:pr-4'>
           {/* <div className='flex flex-row items-center gap-2'>
             <Globe />
             <p>EN</div>
           </div> */}
-          <div onClick={() => router.push(H5_URL)} className="cursor-pointer">
+          <div onClick={() => router.push(H5_URL)} className="cursor-pointer text-center">
             LOG IN</div>
-          <div className='px-4 py-1 rounded cursor-pointer'
+          <div className='px-4 py-1 rounded cursor-pointer text-center'
             onClick={() => router.push(H5_URL)}
             style={{
               backgroundImage: "linear-gradient(to right, #FF1CF7, #00F0FF)",

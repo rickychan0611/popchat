@@ -42,13 +42,18 @@ const Home = () => {
         }}
       >
         <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
-          <ResponsiveImage src="/briefIntroduction.png" className="rounded-[25px]" />
+          <div className="w-full max-w-[750px] mx-auto">
+            <ResponsiveImage src="/why-aime.png" />
+          </div>
           <div className="w-full flex justify-center mt-6">
             <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 sm:mt-20 
                p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
             >
               <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />
             </div>
+          </div>
+          <div className="text-white text-center text-[20px] mt-[30px] mx-4">
+            Focus your talents on subscribers who truly value your work, without the pressure of large audiences.
           </div>
         </div>
       </div>
@@ -78,9 +83,10 @@ const Home = () => {
             <div className="mt-10 sm:mt-20 mb-40">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
-                1-on-1 Live: Private Room</p>
+                Private Room--<br />
+                for 1-on-1 Live Streaming</p>
               <p className="text-black text-[24px] mt-10 mb-20 font-serif">
-                1-on-1 Live Streaming: Engage in direct face-to-face interaction with the host
+                Focus your talents on subscribers who truly value your work, without the pressure of large audiences.
               </p>
             </div>
           </div>
@@ -126,7 +132,7 @@ const Home = () => {
       >
 
         {/* Private show */}
-        <div className="flex w-full max-w-7xl flex-col lg:flex-row mt-10 sm:mt-40 mb-20 sm:mb-0 px-4 gap-4">
+        <div className="flex w-full max-w-7xl flex-col xl:flex-row mt-10 sm:mt-40 mb-20 sm:mb-0 px-4 gap-4">
 
           <div className="flex flex-1 justify-center items-center">
             <div className="rounded-[30px] w-[600px] h-[800px]">
@@ -139,29 +145,41 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0 text-white">
-            <div className="flex flex-col">
-              <div className="w-[320px] h-[245px] relative">
-                <Image src="/privateShow.png" fill sizes="100%" alt="private show" className="object-contain" />
+          <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0 text-white pl-16">
+            <div className="flex flex-row">
+              <div className="w-[10px] h-[380px] relative">
+                <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
               </div>
-
-              <div className="text-[16px] flex flex-col lg:flex-row gap-4 mt-16">
-                <div className="px-6 py-2 rounded-full border border-white cursor-pointer flex justify-center items-start">
-                  Ticketed Entry
-                </div>
-                <div className="px-6 py-2 rounded-full border border-white cursor-pointer flex justify-center items-start">
-                  Guest Limit
-                </div>
+              <div className="flex flex-col ml-16">
+                <p className="text-white text-[54px] font-serif italic">
+                  Private Room--<br />
+                  for 1-on-1 Live Streaming</p>
+                <p className="text-white text-[20px] mt-10 mb-20 ">
+                  Imagine, create and perform your way. Host intimate shows, set your own pricing and audience limits.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Exclusive Media Unlock */}
-        <div className="flex w-full max-w-[1200px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-16">
+        <div className="flex w-full max-w-[1300px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-16">
+          <div className="flex flex-row flex-1 justify-center items-center">
+            <div className="w-[6px] h-[260px] relative">
+              <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
+            </div>
+            <div className="flex flex-col ml-8">
+              <p className="text-white text-[54px] font-serif italic">
+                Exclusive Media Unlock</p>
+              <p className="text-white text-[20px] mt-10 ">
+                Directly monetize content that matches your
+                fans' preferences
+              </p>
+            </div>
+          </div>
+
           <div className="flex flex-1 flex-col">
-            <Image src="/line.png" width={132} height={6} alt="unlock-image" className="object-contain" />
-            <div className=" font-serif text-white italic text-[54px] my-8 ">Exclusive Meida Unlock</div>
+
             <div className="w-full h-[560px] sm:h-[750px] relative cursor-pointer"
               onClick={() => {
                 setOpen1(!open1)
@@ -180,6 +198,10 @@ const Home = () => {
 
             </div>
           </div>
+        </div>
+
+        {/* Exclusive Media Unlock */}
+        <div className="flex w-full max-w-[1200px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-16">
 
           <div className="flex flex-1 flex-col">
             <div className="w-full h-[570px] sm:h-[741px] relative cursor-pointer"
@@ -191,10 +213,22 @@ const Home = () => {
               <Image src="/custom.png" fill sizes="100%" alt="unlock-image" className="object-cover rounded-[30px]" />
               {open2 && <QRcodeButtons />}
             </div>
-            <div className=" font-serif text-white italic text-[54px] my-8 ">Customized Media</div>
-            <div className=" font-serif text-white text-[20px] mb-8">Signed Visuals Tailored by Hosts</div>
-            <Image src="/line.png" width={132} height={6} alt="unlock-image" className="object-contain" />
+
           </div>
+
+          <div className="flex flex-row flex-1 justify-center items-center">
+            <div className="w-[6px] h-[260px] relative">
+              <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
+            </div>
+            <div className="flex flex-col ml-8">
+              <p className="text-white text-[54px] font-serif italic">
+                Customized Media</p>
+              <p className="text-white text-[20px] mt-10 ">
+                Signed visuals tailored by Hosts deserve good value
+              </p>
+            </div>
+          </div>
+
         </div>
 
         {/* Chat with Fans Using an AI Persona */}
@@ -253,16 +287,39 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
-        <p className="font-serif text-[55px] italic leading-[50px]  text-[#7e318d] font-bold my-20">
-          Chat with ME
-        </p>
-        <Image src="/chat1.png" width={523} height={720} alt="ai-icon" className="mb-20 cursor-pointer"
-          onClick={() => router.push(H5_URL)} />
-        <Image src="/chat2.png" width={523} height={720} alt="ai-icon" className="mb-20 cursor-pointer"
-          onClick={() => router.push(H5_URL)} />
-        <Image src="/chat3.png" width={523} height={720} alt="ai-icon" className="mb-0 cursor-pointer"
-          onClick={() => router.push(H5_URL)} />
+        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-20 px-4">
+          <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
+            Fair and Fast Payouts
+          </p>
+          <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+        </div>
+        <div className="text-[20px] my-16 text-center px-4">
+          Earn 80% of your revenue with the option for immediate withdrawals on transactions exceeding 100 coins.
+        </div>
+        <Image src="/payment.png" width={523} height={720} alt="ai-icon" className=" cursor-pointer" />
+        <div className="text-[20px] my-16 text-center px-4">
+          Step into the future of live streaming with AI Me, the premier AI-enhanced live streaming platform.
+        </div>
 
+        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-10 px-4">
+          <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
+            Business Model:
+          </p>
+          <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+        </div>
+        <div className="flex justify-start flex-col gap-2 mt-10 text-[40px]">
+          <div>6.1 1-on-1 Paid</div>
+          <div>6.2 Private Shows</div>
+          <div>6.3 Exclusive Video/Photo Unlock</div>
+          <div>6.4 Custom Media</div>
+          <div>6.5 Tips</div>
+          <div>6.6 AI persona chat income</div>
+        </div>
+        <div className="text-[20px] my-16 text-center px-4">
+          For more details, please contact: aime@aimeai.live
+        </div>
       </div>
 
     </div >

@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <div className={`flex min-h-screen flex-col items-center justify-between bg-black`} >
-      <div className="flex relative w-full h-full pt-24 flex-col pb-4 sm:pb-28"
+      <div className="flex relative w-full h-full pt-20 flex-col pb-4 sm:pb-28"
         style={{
           backgroundImage: "url('/bg-1.jpg')",
           backgroundRepeat: 'no-repeat',
@@ -41,8 +41,8 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
-        <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
-          <div className="w-full max-w-[750px] mx-auto">
+        Í        <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
+          <div className="w-full max-w-[750px] px-4">
             <ResponsiveImage src="/why-aime.png" />
           </div>
           <div className="w-full flex justify-center mt-6">
@@ -309,15 +309,17 @@ const Home = () => {
           </p>
           <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
         </div>
-        <div className="flex justify-start flex-col gap-2 mt-10 text-[40px]">
-          <div>6.1 1-on-1 Paid</div>
-          <div>6.2 Private Shows</div>
-          <div>6.3 Exclusive Video/Photo Unlock</div>
-          <div>6.4 Custom Media</div>
-          <div>6.5 Tips</div>
-          <div>6.6 AI persona chat income</div>
+        <div className="flex justify-start flex-col gap-2 mt-10 text-[32px]">
+          <div>- 1-on-1 Paid</div>
+          <div>- Private Shows</div>
+          <div>- Exclusive Video/Photo Unlock</div>
+          <div>- Custom Media</div>
+          <div>- Tips</div>
+          <div>- AI persona chat income</div>
         </div>
-        <div className="text-[20px] my-16 text-center px-4">
+        <div className="text-[20px] my-8 text-center px-4">
+          <div className='tracking-wide text-[40px] cursor-pointer mb-8 text-blue-500 underline'
+            onClick={() => router.push('/pricing')}>HOST PRICING</div>
           For more details, please contact: aime@aimeai.live
         </div>
       </div>

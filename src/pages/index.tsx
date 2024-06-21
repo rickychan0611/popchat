@@ -5,6 +5,7 @@ import { Router } from "lucide-react";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Android_Download, H5_URL } from "@/constants/constant";
+import NavMenu from "@/components/NavMenu";
 const Home = () => {
 
   const router = useRouter();
@@ -31,8 +32,10 @@ const Home = () => {
     )
   }
 
+  
+
   return (
-    <div className={`flex min-h-screen flex-col items-center justify-between bg-black`} >
+    <div className={`flex min-h-screen flex-col items-center justify-between bg-black `} >
       <div className="flex relative w-full h-full pt-24 flex-col pb-4 sm:pb-28"
         style={{
           backgroundImage: "url('/bg-1.jpg')",
@@ -41,6 +44,9 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
+
+        <NavMenu />
+
         <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
           <ResponsiveImage src="/briefIntroduction.png" className="rounded-[25px]" />
           <div className="w-full flex justify-center mt-6">

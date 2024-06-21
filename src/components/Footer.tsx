@@ -13,7 +13,7 @@ const Footer = (props: Props) => {
   const [openAffiliate, setOpenAffiliate] = useState(false)
 
   function sendEmail() {
-    const recipient = 'digipalca@gmail.com';
+    const recipient = 'digipalca@gmail.com'
     window.location.href = `mailto:${recipient}`;
   }
 

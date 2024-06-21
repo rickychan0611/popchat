@@ -4,7 +4,7 @@ import { getLayout } from '@/layouts/DefaultLayout';
 const HostBasicRules = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-      <h1 className='my-8'>Host Basic Rules</h1>
+      <h1 className='my-8 text-center'>Host Basic Rules</h1>
 
       <div className="space-y-8">
         <div className="mb-8">

@@ -5,7 +5,7 @@ import React from 'react';
 const HostGuide = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-      <h1 className='my-8'>Host Guide</h1>
+      <h1 className='my-8 text-center'>Host Guide</h1>
       <p className="text-gray-600">Updated: May 21, 2024</p>
 
       <div className="mt-8">

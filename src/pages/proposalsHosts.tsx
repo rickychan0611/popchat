@@ -4,7 +4,7 @@ import React from 'react';
 const ProposalsHosts = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4 text-lg">
-      <h1 className='my-8'>The 6 Principles for Hosts</h1>
+      <h1 className='my-8 text-center'>The 6 Principles for Hosts</h1>
       <ul>
         <br /><li>1. Always treat your audience with genuine respect and prioritize their needs over merely profiting from them.
         </li>

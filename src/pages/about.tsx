@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-      <h1 className='my-8'>About</h1>
+      <h1 className='my-8 text-center'>About</h1>
       <p>
         Digipal, known as <b>AI Me</b>, is an innovative AI startup based in Canada, leading the charge as the first AI-powered live streaming platform globally. At its core, AI Me is about using AI to sculpt your ideal self, transcending barriers related to appearance, age, and accent for unrestricted audience interaction. For hosts who shy away from the camera or those who prioritize privacy, AI live streaming emerges as a novel choice. AI hosts can define vibrant personas and appearances, liberating themselves to showcase their authentic self more freely. Thanks to advancements in AI digital beings and face-swapping technology, we're turning this vision into reality, particularly shining in realms like role-playing and real-time streaming.
       </p>

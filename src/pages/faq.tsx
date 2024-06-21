@@ -81,7 +81,7 @@ const FAQPage = () => {
 
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-      <h1 className='my-8'>Frequently Asked Questions</h1>
+      <h1 className='my-8 text-center'>Frequently Asked Questions</h1>
 
       <h2 className='my-8 text-3xl'>General Questions</h2>
       <div className="space-y-4">

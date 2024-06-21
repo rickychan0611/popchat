@@ -29,7 +29,7 @@ const Footer = (props: Props) => {
             <Image src="/youtube.png" width={32} height={32} alt="youtube" className='object-contain cursor-pointer'
               onClick={() => window.open('https://www.youtube.com/channel/UC7zrYrZEpQAquFnEiSp93IA', '_blank')} />
           </div>
-          <div className='flex flex-row gap-8 items-center'>
+          {/* <div className='flex flex-row gap-8 items-center'>
             <Image src="/discord.png" width={32} height={32} alt="discord" className='object-contain cursor-pointer'
               onClick={() => window.open('https://discord.gg/5Y7A347N', '_blank')} />
             <Image src="/truthsocial.png" width={32} height={32} alt="truthsocial" className='object-contain cursor-pointer'
@@ -39,40 +39,40 @@ const Footer = (props: Props) => {
             <Image src="/tiktok.png" width={32} height={32} alt="tiktok" className='object-contain cursor-pointer'
               onClick={() => window.open('https://www.tiktok.com/@aime.chat', '_blank')} />
 
-          </div>
+          </div> */}
 
         </div>
 
         <div className='flex flex-1 justify-center text-center lg:text-left'>
           <div className='flex flex-col gap-4 mt-6'>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/pricing')}>Pricing</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => sendEmail()}>Contact</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/about')}>About</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/faq')}>FAQ</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/about')}>Terms</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/privacy-policy')}>Privacy Policy</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => sendEmail()}>Affiliate</p>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/pricing')}>Pricing</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => sendEmail()}>Contact</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/about')}>About</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/faq')}>FAQ</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/terms')}>Terms</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/privacy-policy')}>Privacy Policy</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => sendEmail()}>Affiliate</div>
           </div>
         </div>
         <div className='flex flex-1 justify-center mb-6 text-center lg:text-left'>
           <div className='flex flex-col gap-4 mt-6'>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/proposalsHosts')}>6 Proposals for Hosts</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/host-guide')}>Host Guide</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/host-rules')}>Host Basic Rules</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/prohibited-rules')}>12 Prohibited Rules</p>
-            <p className='text-[#3ECFEF] cursor-pointer'
-              onClick={() => router.push('/parental-control-guide')}>Parental Control Guide</p>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/proposalsHosts')}>6 Proposals for Hosts</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/host-guide')}>Host Guide</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/host-rules')}>Host Basic Rules</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/prohibited-rules')}>12 Prohibited Rules</div>
+            <div className='text-[#3ECFEF] cursor-pointer'
+              onClick={() => router.push('/parental-control-guide')}>Parental Control Guide</div>
           </div>
         </div>
 
@@ -82,13 +82,13 @@ const Footer = (props: Props) => {
             <div className='flex flex-col xl:flex-row gap-4 mt-4'>
               <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'
                 onClick={() => {
-                  alert("Coming soon to the Google Play Store. Stay tuned!")
+                  router.push("https://onlyforyou.live/api/android/download")
                 }
                 } />
               <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'
                 onClick={() => router.push('/addIcon')} />
             </div>
-            <p className='font-serif text-2xl text-white'>Download now</p>
+            <div className='font-serif text-2xl text-white'>Download now</div>
           </div>
         </div>
       </div>

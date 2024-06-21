@@ -4,7 +4,7 @@ import React from 'react';
 const Terms = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-      <h1 className='my-8'>Terms</h1>
+      <h1 className='my-8 text-center'>Terms</h1>
       <div >
         <p>
           We are AI Me, and our office is in British Columbia, Canada. Please carefully

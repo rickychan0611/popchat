@@ -4,7 +4,7 @@ import React from 'react';
 const privacyPolicy = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-      <h1 className='my-8'>Privacy Policy</h1>
+      <h1 className='my-8 text-center'>Privacy Policy</h1>
       <p>
         We are a limited liability company registered in British Columbia, Canada, with the website address
         <a href="http://www.aimeai.live">http://www.aimeai.live</a> (referred to in this document as "the Website"). This

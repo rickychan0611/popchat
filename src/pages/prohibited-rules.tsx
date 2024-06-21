@@ -4,7 +4,7 @@ import React from 'react';
 const StrictProhibitions = () => {
   return (
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
-    <h1 className='my-8'>12 Strict Prohibitions</h1>
+    <h1 className='my-8 text-center'>12 Strict Prohibitions</h1>
 
       <div className="space-y-8">
         <div className="mb-8">

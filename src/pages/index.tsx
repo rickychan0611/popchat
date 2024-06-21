@@ -61,8 +61,9 @@ const Home = () => {
 
       <div className="sm:hidden block">
         <div className='flex flex-row gap-4 mt-4 mb-2'>
-          <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain' />
-          <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain'
+          <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer' 
+          onClick={() => router.push(Android_Download)} />
+          <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'
             onClick={() => router.push('/addIcon')} />
         </div>
         <p className='font-serif text-2xl text-white mb-4 text-center'>Download now</p>

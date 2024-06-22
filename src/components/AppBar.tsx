@@ -20,12 +20,12 @@ const AppBar = (props: Props) => {
           >1ON1 CHAT</div>
         </div>
         <div className='sm:flex flex-1 flex-row justify-between items-center  hidden max-w-[400px] mx-4'>
-          <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 '
+          <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 justify-center'
             onClick={() => router.push('/why-aime')}>WHY AI ME</div>
-          <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 mx-4 '
+          <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 mx-4 justify-center'
             onClick={() => router.push('/pricing')}>PRICING</div>
           <div className='relative'>
-            <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 '
+            <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 justify-center'
               onClick={() => { setOpen(!open) }}
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => setOpen(false)}

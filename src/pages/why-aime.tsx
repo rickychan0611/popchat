@@ -33,27 +33,29 @@ const Home = () => {
 
   return (
     <div className={`flex min-h-screen flex-col items-center justify-between bg-black`} >
-      <div className="flex relative w-full h-full pt-20 flex-col pb-4 sm:pb-28"
+      <div className="flex relative w-full h-full pt-[200px] flex-col pb-[100px] sm:pb-28"
         style={{
           backgroundImage: "url('/bg-1.jpg')",
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
         }}
       >
-        Í        <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
+        <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10 flex flex-col justify-center items-center">
           <div className="w-full max-w-[750px] px-4">
             <ResponsiveImage src="/why-aime.png" />
           </div>
-          <div className="w-full flex justify-center mt-6">
-            <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 sm:mt-20 
+          <div className="text-left w-full text-white font-serif text-[38px] italic mt-32 mb-4 pl-4">
+            Pioneering AI Face-Swapping for Live Streaming</div>
+          <div className="w-full flex justify-center items-center">
+            <div className="flex flex-1 justify-center items-center rounded-[30px] 
                p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
             >
               <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />
             </div>
           </div>
-          <div className="text-white text-center text-[20px] mt-[30px] mx-4">
-            Focus your talents on subscribers who truly value your work, without the pressure of large audiences.
+          <div className="text-white text-center text-[28px] mt-[30px] mx-4">
+            Captivate your audience with a dynamic on-screen presence.
           </div>
         </div>
       </div>
@@ -76,10 +78,10 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] p-4 ">
+        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] p-0 sm:p-4 ">
 
           {/* left heart logo column */}
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10">
+          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4">
             <div className="mt-10 sm:mt-20 mb-40">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
@@ -95,7 +97,7 @@ const Home = () => {
           <div className="flex flex-1 justify-center items-center relative mt-[-150px] mb-10 sm:mt-0 sm:mb-10">
 
             {/* video */}
-            <div className="rounded-[40px] w-[88%] sm:w-[395px] h-[820px] absolute top-0 sm:top-[100px]">
+            <div className="rounded-[40px] w-[88%] sm:w-[390px] h-[815px] absolute top-0 sm:top-[100px]">
               <video controls={false} autoPlay muted loop playsInline
                 className="w-full h-full object-cover rounded-[50px]"
               >
@@ -110,8 +112,8 @@ const Home = () => {
                 <Image src="/frame.png" fill sizes="100%" alt="frame" className="z-40" />
               </div>
 
-              <div className="absolute w-full bottom-2  sm:ml-[-120px]">
-                <div className="w-full sm:w-[520px] h-[320px] relative scale-90 z-40 ml-[-16px] sm:ml-0">
+              <div className="absolute w-[98%] bottom-2 sm:ml-[-120px]">
+                <div className="w-full sm:w-[520px] h-[220px] sm:h-[320px] relative scale-90 z-40 ml-[-16px] sm:ml-0">
                   <Image src="/video-graphics.png" fill sizes="100%" alt="frame" className="z-40" />
                 </div>
               </div>
@@ -145,12 +147,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0 text-white pl-16">
+          <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0 text-white pl-2 sm:pl-16">
             <div className="flex flex-row">
               <div className="w-[10px] h-[380px] relative">
                 <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
               </div>
-              <div className="flex flex-col ml-16">
+              <div className="flex flex-col pl-8 sm:ml-16">
                 <p className="text-white text-[54px] font-serif italic">
                   Private Room--<br />
                   for 1-on-1 Live Streaming</p>

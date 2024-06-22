@@ -54,8 +54,6 @@ const Footer = (props: Props) => {
           <div className='flex flex-1 justify-center text-center lg:text-left'>
             <div className='flex flex-col gap-4 mt-6'>
               <div className='text-[#3ECFEF] cursor-pointer'
-                onClick={() => router.push('/pricing')}>Pricing</div>
-              <div className='text-[#3ECFEF] cursor-pointer'
                 onClick={() => setOpenContact(true)}>Contact</div>
               <div className='text-[#3ECFEF] cursor-pointer'
                 onClick={() => router.push('/about')}>About</div>

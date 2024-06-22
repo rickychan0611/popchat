@@ -78,10 +78,10 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] p-4 ">
+        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] ">
 
           {/* left heart logo column */}
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10">
+          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4 ">
             <div className="mt-10 sm:mt-20 mb-40">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
@@ -96,7 +96,7 @@ const Home = () => {
           <div className="flex flex-1 justify-center items-center relative mt-[-150px] mb-10 sm:mt-0 sm:mb-10">
 
             {/* video */}
-            <div className="rounded-[40px] w-[88%] sm:w-[395px] h-[820px] absolute top-0 sm:top-[100px]">
+            <div className="rounded-[40px] w-[88%] sm:w-[390px] h-[815px] absolute top-0 sm:top-[100px]">
               <video controls={false} autoPlay muted loop playsInline
                 className="w-full h-full object-cover rounded-[50px]"
               >
@@ -111,8 +111,8 @@ const Home = () => {
                 <Image src="/frame.png" fill sizes="100%" alt="frame" className="z-40" />
               </div>
 
-              <div className="absolute w-full bottom-2  sm:ml-[-120px]">
-                <div className="w-full sm:w-[520px] h-[320px] relative scale-90 z-40 ml-[-16px] sm:ml-0">
+              <div className="absolute w-[98%] bottom-2 sm:ml-[-120px]">
+                <div className="w-full sm:w-[520px] h-[220px] sm:h-[320px] relative scale-90 z-40 ml-[-16px] sm:ml-0">
                   <Image src="/video-graphics.png" fill sizes="100%" alt="frame" className="z-40" />
                 </div>
               </div>

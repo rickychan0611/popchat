@@ -70,7 +70,7 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center z-10"
+      <div className="flex relative w-full h-full flex-row justify-center z-10 bg-white"
         style={{
           backgroundImage: "url('/bg-blue.png')",
           backgroundRepeat: 'no-repeat',

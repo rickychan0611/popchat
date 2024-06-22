@@ -70,18 +70,18 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white">
+      <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white"
+        style={{
+          backgroundImage: "url('/bg-blue.png')",
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center top',
+          backgroundSize: 'cover',
+        }}>
         <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10"
-          style={{
-            backgroundImage: "url('/bg-blue.png')",
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center top',
-            backgroundSize: 'cover',
-          }}>
-
+        >
           {/* left heart logo column */}
           <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4 ">
-            <div className="mt-10 sm:mt-20 mb-40">
+            <div className="mt-10 sm:mt-20 mb-20">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
                 1-on-1 Live: Private Room</p>

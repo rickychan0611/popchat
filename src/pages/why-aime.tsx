@@ -70,15 +70,14 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center sm:p-10 z-10 bg-white"
-        style={{
-          backgroundImage: "url('/bg-2.jpg')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center bottom',
-          backgroundSize: 'cover',
-        }}
-      >
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] p-0 sm:p-4 ">
+      <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white">
+        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10"
+          style={{
+            backgroundImage: "url('/bg-2.jpg')",
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center top',
+            backgroundSize: 'cover',
+          }}>
 
           {/* left heart logo column */}
           <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4">

@@ -32,7 +32,7 @@ const Home = () => {
     )
   }
 
-  
+
 
   return (
     <div className={`flex min-h-screen flex-col items-center justify-between bg-black `} >
@@ -61,8 +61,8 @@ const Home = () => {
 
       <div className="sm:hidden block">
         <div className='flex flex-row gap-4 mt-4 mb-2'>
-          <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer' 
-          onClick={() => router.push(Android_Download)} />
+          <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'
+            onClick={() => router.push(Android_Download)} />
           <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain cursor-pointer'
             onClick={() => router.push('/addIcon')} />
         </div>
@@ -70,15 +70,14 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center sm:p-10 z-10 bg-white"
-        style={{
-          backgroundImage: "url('/bg-2.jpg')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center bottom',
-          backgroundSize: 'cover',
-        }}
-      >
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] ">
+      <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white">
+        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10"
+          style={{
+            backgroundImage: "url('/bg-2.jpg')",
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center top',
+            backgroundSize: 'cover',
+          }}>
 
           {/* left heart logo column */}
           <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4 ">

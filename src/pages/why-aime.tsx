@@ -70,18 +70,18 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white">
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10"
-          style={{
-            backgroundImage: "url('/bg-2.jpg')",
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center top',
-            backgroundSize: 'cover',
-          }}>
+      <div className="flex relative w-full h-full flex-row justify-center z-10"
+        style={{
+          backgroundImage: "url('/bg-blue.png')",
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right top',
+          backgroundSize: 'cover',
+        }}>
+        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10">
 
           {/* left heart logo column */}
           <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4">
-            <div className="mt-10 sm:mt-20 mb-40">
+            <div className="mt-10 sm:mt-20 ">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
                 Private Room--<br />
@@ -93,7 +93,7 @@ const Home = () => {
           </div>
 
           {/* right video */}
-          <div className="flex flex-1 justify-center items-center relative mt-[-150px] mb-10 sm:mt-0 sm:mb-10">
+          <div className="flex flex-1 justify-center items-center relative  mb-10 sm:mt-0 sm:mb-10">
 
             {/* video */}
             <div className="rounded-[40px] w-[88%] sm:w-[390px] h-[815px] absolute top-0 sm:top-[100px]">

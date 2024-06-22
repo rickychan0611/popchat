@@ -73,7 +73,7 @@ const Home = () => {
       <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white">
         <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10"
           style={{
-            backgroundImage: "url('/bg-2.jpg')",
+            backgroundImage: "url('/bg-blue.png')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center top',
             backgroundSize: 'cover',

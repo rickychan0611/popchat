@@ -47,15 +47,17 @@ const Home = () => {
 
         <NavMenu />
 
-        <div className="w-full max-w-6xl mx-auto pt-0 sm:pt-10">
+        <div className="w-[90%] mx-auto pt-0 sm:pt-10 text-center text-white">
           <ResponsiveImage src="/briefIntroduction.png" className="rounded-[25px]" />
           <div className="w-full flex justify-center mt-6">
-            <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 sm:mt-20 
+            <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 lg:mt-20 
                p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
             >
               <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />
             </div>
           </div>
+          <div className="font-serif text-3xl sm:text-[45px] italic mt-2 sm:mt-8 sm:leading-[70px]">AI Face-Swapping</div>
+          <div className="text-lg sm:text-[18px] font-serif mb-4 mt-2 sm:mt-7">Realistic and Vibrant, Transcend Yourself</div>
         </div>
       </div>
 
@@ -70,7 +72,7 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center  z-10 bg-white"
+      <div className="flex relative w-full h-full flex-row justify-center z-10 bg-white"
         style={{
           backgroundImage: "url('/bg-blue.png')",
           backgroundRepeat: 'no-repeat',
@@ -95,7 +97,7 @@ const Home = () => {
           <div className="flex flex-1 justify-center items-center relative mt-[-80px] mb-10 lg:mt-0 lg:mb-10">
 
             {/* video */}
-            <div className="rounded-[40px] w-[88%] max-w-[370px] lg:w-[390px] h-[815px] absolute top-0 lg:top-[100px]">
+            <div className="rounded-[40px] w-[88%] max-w-[375px] lg:w-[390px] h-[815px] absolute top-0 lg:top-[100px]">
               <video controls={false} autoPlay muted loop playsInline
                 className="w-full h-full object-cover rounded-[50px]"
               >
@@ -221,7 +223,7 @@ const Home = () => {
                 backgroundSize: 'cover',
               }}>
 
-              <div className="flex py-10 px-4 sm:px-20 flex-col-reverse sm:flex-row justify-between items-center">
+              <div className="flex py-16 px-4 sm:px-20 flex-col-reverse sm:flex-row justify-between items-center">
                 <div className="flex flex-col justify-center w-full sm:w-1/2">
                   <p className="font-serif text-[52px] italic leading-[60px] mb-6">Chat with Fans Using an AI Persona</p>
                   <p className="mb-2 text-[20px] font-serif">You can’t chat with 100 fans at once, but "it" can! Plus, users can chat with AI persona at a low cost</p>

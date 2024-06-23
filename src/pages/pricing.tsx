@@ -5,6 +5,10 @@ import Image from 'next/image';
 import React from 'react';
 
 const PricingPage = () => {
+  const Coin = () => (
+    <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />
+  )
+
   return (
     <div className="min-h-screen pb-12 pt-[150px]"
       style={{
@@ -29,11 +33,11 @@ const PricingPage = () => {
               <div className="mt-2  text-gray-800">
                 <p>Recommended Package Rates:</p>
                 <ul className="list-disc pl-5 mt-2">
-                  <li><div className='flex flex-row gap-1'> 10 minutes: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />35</div></li>
-                  <li><div className='flex flex-row gap-1'> 15 minutes: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />45</div></li>
-                  <li><div className='flex flex-row gap-1'> 30 minutes: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />70</div></li>
-                  <li><div className='flex flex-row gap-1'> 45 minutes: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />100</div></li>
-                  <li><div className='flex flex-row gap-1'> 60 minutes: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />120</div></li>
+                  <li><div className='flex flex-row gap-1'> 10 minutes: <Coin />25</div></li>
+                  <li><div className='flex flex-row gap-1'> 15 minutes: <Coin />35</div></li>
+                  <li><div className='flex flex-row gap-1'> 20 minutes: <Coin />45</div></li>
+                  <li><div className='flex flex-row gap-1'> 30 minutes: <Coin />70</div></li>
+                  <li><div className='flex flex-row gap-1'> 60 minutes: <Coin />120</div></li>
                 </ul>
                 <p className="mt-2">Extensions available for sessions over 60 minutes</p>
               </div>
@@ -44,10 +48,12 @@ const PricingPage = () => {
           <div className="bg-white overflow-hidden shadow rounded-lg">
             <div className="px-4 py-5 sm:p-6">
               <h3 className="text-3xl font-serif text-center text-blue-700">Private Shows</h3>
-              <p className="mt-2 text-gray-800">Host-Set Pricing</p>
-              <div className="mt-2 text-gray-800">
-                <p>For example:</p>
-                <div className='flex flex-row gap-1'> 60 minutes: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />30 each</div>
+              <p className="mt-2 text-gray-800">Host-Set Pricing </p>
+              <p className=" text-gray-800">Ticketed Entry</p>
+              <p className=" text-gray-800">Guest Limited</p>
+              <div className="mt-4 text-gray-800">
+                <div>For example: A 30 minutes show:</div>
+                <div className='flex flex-row gap-1'>Ticket Price <Coin />30 each</div>
                 Limit: 200 people
               </div>
             </div>
@@ -59,7 +65,7 @@ const PricingPage = () => {
               <h3 className="text-3xl font-serif text-center text-blue-700">Exclusive Video/Photo Unlock</h3>
               <p className="mt-2  text-gray-800">Host-Set Pricing</p>
               <div className="mt-2  text-gray-800">
-                <div className='flex flex-row gap-1'>Average Pricing: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />15 per item
+                <div className='flex flex-row gap-1'>Average Pricing: <Coin />15 per item
                 </div>
               </div>
             </div>
@@ -72,7 +78,7 @@ const PricingPage = () => {
               <p className="mt-2  text-gray-800">Agreed Pricing</p>
               <div className="mt-2  text-gray-800">
                 <p>Recommended Range:</p>
-                <div className='flex flex-row gap-1'><Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />5 - <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />100 per item
+                <div className='flex flex-row gap-1'><Coin />5 - <Coin />100 per item
                 </div>
               </div>
             </div>
@@ -84,7 +90,7 @@ const PricingPage = () => {
               <h3 className="text-3xl font-serif text-center text-blue-700">Tips</h3>
               <p className="mt-2  text-gray-800">User-Decided Customizable</p>
               <div className="mt-2  text-gray-80 flex flex-row gap-1">
-                Range: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />0.1 - <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />20
+                Range: <Coin />0.1 - <Coin />20
               </div>
             </div>
           </div>
@@ -95,7 +101,7 @@ const PricingPage = () => {
               <h3 className="text-3xl font-serif text-center text-blue-700">AI Persona Chat</h3>
               <p className="mt-2  text-gray-800">Host-Set Pricing</p>
               <div className="mt-2  text-gray-80 flex flex-row gap-1">
-                Range: <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />0.1 - <Image src="/coin.png" alt="coin" width={20} height={20} className="object-contain" />20 per hour
+                Range: <Coin />0.1 - <Coin />20 per hour
               </div>
             </div>
           </div>

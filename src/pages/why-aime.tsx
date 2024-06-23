@@ -70,18 +70,18 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-row justify-center z-10 bg-white"
+      <div className="flex relative w-full h-full flex-col lg:flex-row justify-center z-10 bg-white"
         style={{
           backgroundImage: "url('/bg-blue.png')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'right top',
           backgroundSize: 'cover',
         }}>
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10">
+        <div className="flex flex-col lg:flex-row relative w-full max-w-[1400px] lg:pt-10 lg:pb-32 lg:pl-8">
 
           {/* left heart logo column */}
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4">
-            <div className="mt-10 sm:mt-20 ">
+          <div className="flex flex-col justify-center items-center w-full flex-1 lg:pr-10 px-6">
+            <div className="mt-10 lg:mt-20 ">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
                 Private Room--<br />
@@ -93,10 +93,10 @@ const Home = () => {
           </div>
 
           {/* right video */}
-          <div className="flex flex-1 justify-center items-center relative  mb-10 sm:mt-0 sm:mb-10">
+          <div className="flex flex-1 justify-center items-center relative  mb-10 lg:mt-0 lg:mb-10">
 
             {/* video */}
-            <div className="rounded-[40px] w-[88%] sm:w-[390px] h-[815px] absolute top-0 sm:top-[100px]">
+            <div className="rounded-[40px] w-[88%] max-w-[375px] lg:w-[390px] h-[815px] absolute top-0 lg:top-[100px]">
               <video controls={false} autoPlay muted loop playsInline
                 className="w-full h-full object-cover rounded-[50px]"
               >
@@ -106,13 +106,13 @@ const Home = () => {
             </div>
 
             {/* frame */}
-            <div className="rounded-[30px] w-[100%] sm:w-[408px] h-[820px] sm:absolute top-[95px] ml-2 sm:ml-0 mt-[-5px]">
-              <div className=" w-[97%] sm:w-[408px] h-[832px] relative">
+            <div className="rounded-[30px] w-[100%] max-w-[408px] lg:w-[408px] h-[820px] lg:absolute top-[95px] ml-2 lg:ml-0 mt-[-5px]">
+              <div className=" w-[97%] lg:w-[408px] h-[832px] relative">
                 <Image src="/frame.png" fill sizes="100%" alt="frame" className="z-40" />
               </div>
 
-              <div className="absolute w-[98%] bottom-2 sm:ml-[-120px]">
-                <div className="w-full sm:w-[520px] h-[220px] sm:h-[320px] relative scale-90 z-40 ml-[-16px] sm:ml-0">
+              <div className="absolute w-[98%]  max-w-[420px] bottom-2 lg:ml-[-120px]">
+                <div className="w-full lg:w-[520px] h-[220px] lg:h-[320px] relative scale-90 z-40 ml-[-16px] lg:ml-0">
                   <Image src="/video-graphics.png" fill sizes="100%" alt="frame" className="z-40" />
                 </div>
               </div>
@@ -123,7 +123,7 @@ const Home = () => {
 
 
       {/* section 3 */}
-      <div className="flex relative w-full h-full flex-col justify-center items-center mt-20 "
+      <div className="flex relative w-full h-full flex-col justify-center items-center mt-10 lg:mt-40 "
         style={{
           backgroundImage: "url('/bg-3.png')",
           backgroundRepeat: 'no-repeat',
@@ -284,18 +284,18 @@ const Home = () => {
         style={{
           backgroundImage: "url('/bg-5.png')",
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center bottom',
+          backgroundPosition: 'center top',
           backgroundSize: 'cover',
         }}
       >
-        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-20 px-4">
+        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-40 px-4">
           <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
           <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
             Fair and Fast Payouts
           </p>
           <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
         </div>
-        <div className="text-[20px] my-16 text-center px-4">
+        <div className="text-[20px] my-[60px] text-center px-4">
           Earn 80% of your revenue with the option for immediate withdrawals on transactions exceeding 100 coins.
         </div>
         <Image src="/payment.png" width={523} height={720} alt="ai-icon" className=" cursor-pointer" />
@@ -303,26 +303,32 @@ const Home = () => {
           Step into the future of live streaming with AI Me, the premier AI-enhanced live streaming platform.
         </div>
 
-        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-10 px-4">
+        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-[156px] px-4">
           <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
           <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
             Business Model:
           </p>
           <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
         </div>
-        <div className="flex justify-start flex-col gap-2 mt-10 text-[32px]">
-          <div>- 1-on-1 Paid</div>
-          <div>- Private Shows</div>
-          <div>- Exclusive Video/Photo Unlock</div>
-          <div>- Custom Media</div>
-          <div>- Tips</div>
-          <div>- AI persona chat income</div>
+        <div className=" flex flex-col items-center p-6 max-w-[1000px] mt-4 px-4">
+          <p className="text-lg text-gray-700 mb-6 text-center">
+            Explore our diverse range of monetization options designed to maximize your earnings and engage your audience. Whether through personalized one-on-one sessions, exclusive content, or interactive AI persona chats, our platform offers multiple avenues for generating income.
+          </p>
+          <div className="w-full max-w-2xl bg-white p-4 sm:p-10 rounded-lg shadow-md mb-4 border mt-6">
+            <h2 className="text-2xl text-center font-semibold text-blue-800 font-serif italic">Services through which you can earn</h2>
+            <ul className="list-disc list-inside text-gray-700 mt-6">
+              <li>1-on-1 Paid</li>
+              <li>Private Shows</li>
+              <li>Exclusive Video/Photo Unlock</li>
+              <li>Custom Media</li>
+              <li>Tips</li>
+              <li>AI persona chat income</li>
+            </ul>
+          </div>
         </div>
-        <div className="text-[20px] my-8 text-center px-4">
-          <div className='tracking-wide text-[40px] cursor-pointer mb-8 text-blue-500 underline'
-            onClick={() => router.push('/pricing')}>HOST PRICING</div>
+        <p className="text-lg text-gray-700 mb-6 text-center">
           For more details, please contact: aime@aimeai.live
-        </div>
+        </p>
       </div>
 
     </div >

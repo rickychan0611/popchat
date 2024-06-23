@@ -77,11 +77,11 @@ const Home = () => {
           backgroundPosition: 'center top',
           backgroundSize: 'cover',
         }}>
-        <div className="flex flex-col sm:flex-row relative w-full max-w-[1400px] sm:p-10"
+        <div className="flex flex-col lg:flex-row relative w-full max-w-[1400px] lg:p-10"
         >
           {/* left heart logo column */}
-          <div className="flex flex-col justify-center items-center w-full sm:w-1/2 sm:pr-10 px-4 ">
-            <div className="mt-10 sm:mt-20 mb-20">
+          <div className="flex flex-col justify-center items-center w-full lg:w-1/2 lg:pr-10 px-6 ">
+            <div className="mt-10 lg:mt-20 mb-20">
               <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
               <p className="text-black text-[54px] font-serif italic">
                 1-on-1 Live: Private Room</p>
@@ -92,10 +92,10 @@ const Home = () => {
           </div>
 
           {/* right video */}
-          <div className="flex flex-1 justify-center items-center relative mt-[-150px] mb-10 sm:mt-0 sm:mb-10">
+          <div className="flex flex-1 justify-center items-center relative mt-[-80px] mb-10 lg:mt-0 lg:mb-10">
 
             {/* video */}
-            <div className="rounded-[40px] w-[88%] sm:w-[390px] h-[815px] absolute top-0 sm:top-[100px]">
+            <div className="rounded-[40px] w-[88%] max-w-[370px] lg:w-[390px] h-[815px] absolute top-0 lg:top-[100px]">
               <video controls={false} autoPlay muted loop playsInline
                 className="w-full h-full object-cover rounded-[50px]"
               >
@@ -105,13 +105,13 @@ const Home = () => {
             </div>
 
             {/* frame */}
-            <div className="rounded-[30px] w-[100%] sm:w-[408px] h-[820px] sm:absolute top-[95px] ml-2 sm:ml-0 mt-[-5px]">
-              <div className=" w-[97%] sm:w-[408px] h-[832px] relative">
+            <div className="rounded-[30px] w-[100%] max-w-[408px] lg:w-[408px] h-[820px] lg:absolute top-[95px] ml-2 lg:ml-0 mt-[-5px]">
+              <div className=" w-[97%] max-w-[408px] lg:w-[408px] h-[832px] relative">
                 <Image src="/frame.png" fill sizes="100%" alt="frame" className="z-40" />
               </div>
 
-              <div className="absolute w-[98%] bottom-2 sm:ml-[-120px]">
-                <div className="w-full sm:w-[520px] h-[220px] sm:h-[320px] relative scale-90 z-40 ml-[-16px] sm:ml-0">
+              <div className="absolute w-[98%] max-w-[320px] bottom-2 lg:ml-[-120px]">
+                <div className="w-full lg:w-[520px] h-[220px] lg:h-[320px] relative scale-90 z-40 ml-[-16px] lg:ml-0">
                   <Image src="/video-graphics.png" fill sizes="100%" alt="frame" className="z-40" />
                 </div>
               </div>
@@ -122,7 +122,7 @@ const Home = () => {
 
 
       {/* section 3 */}
-      <div className="flex relative w-full h-full flex-col justify-center items-center mt-20 "
+      <div className="flex relative w-full h-full flex-col justify-center items-center mt-10 lg:mt-32 "
         style={{
           backgroundImage: "url('/bg-3.png')",
           backgroundRepeat: 'no-repeat',
@@ -259,14 +259,19 @@ const Home = () => {
           backgroundSize: 'cover',
         }}
       >
-        <p className="font-serif text-[55px] italic leading-[50px]  text-[#7e318d] font-bold my-20">
-          Chat with ME
-        </p>
-        <Image src="/chat1.png" width={523} height={720} alt="ai-icon" className="mb-20 cursor-pointer"
+        <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-[156px] mb-[164px] px-4">
+          <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
+            Start to Chat
+          </p>
+          <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+        </div>
+
+        <Image src="/chat1.png" width={523} height={720} alt="ai-icon" className="mb-[240px] cursor-pointer"
           onClick={() => router.push(H5_URL)} />
-        <Image src="/chat2.png" width={523} height={720} alt="ai-icon" className="mb-20 cursor-pointer"
+        <Image src="/chat2.png" width={523} height={720} alt="ai-icon" className="mb-[240px] cursor-pointer"
           onClick={() => router.push(H5_URL)} />
-        <Image src="/chat3.png" width={523} height={720} alt="ai-icon" className="mb-0 cursor-pointer"
+        <Image src="/chat3.png" width={523} height={720} alt="ai-icon" className="mb-[230px] cursor-pointer"
           onClick={() => router.push(H5_URL)} />
 
       </div>

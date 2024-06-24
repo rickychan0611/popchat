@@ -33,7 +33,6 @@ const Home = () => {
   }
 
 
-
   return (
     <div className={`flex min-h-screen flex-col items-center justify-between bg-black `} >
       <div className="flex relative w-full h-full pt-24 flex-col pb-4 sm:pb-28"
@@ -47,10 +46,10 @@ const Home = () => {
 
         <NavMenu />
 
-        <div className="w-[90%] mx-auto pt-0 sm:pt-10 text-center text-white">
+        <div className="w-[90%] max-w-[1200px] mx-auto pt-0 sm:pt-10 text-center text-white">
           <ResponsiveImage src="/briefIntroduction.png" className="rounded-[25px]" />
           <div className="w-full flex justify-center mt-6">
-            <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 lg:mt-20 
+            <div className="flex flex-1 justify-center items-center rounded-[30px] mt-0 lg:mt-28 
                p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
             >
               <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />

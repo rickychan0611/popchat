@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Add to Home Screen icons */}
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/180.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/icons/152.png" />

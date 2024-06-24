@@ -123,7 +123,7 @@ const Home = () => {
 
 
       {/* section 3 */}
-      <div className="flex relative w-full h-full flex-col justify-center items-center mt-10 lg:mt-32 "
+      <div className="flex relative w-full h-full flex-col justify-center items-center mt-10 lg:mt-[150px]"
         style={{
           backgroundImage: "url('/bg-3.png')",
           backgroundRepeat: 'no-repeat',

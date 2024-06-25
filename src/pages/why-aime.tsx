@@ -6,49 +6,71 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { Android_Download, H5_URL } from "@/constants/constant";
 const Home = () => {
-
   const router = useRouter();
-  const [open1, setOpen1] = useState(false)
-  const [open2, setOpen2] = useState(false)
-  const [open3, setOpen3] = useState(false)
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
 
   const QRcodeButtons = () => {
     return (
       <div className="flex justify-center items-center w-full h-full absolute bg-[rgba(0,0,0,0.7)] rounded-[30px]">
         <div className="flex flex-row gap-6">
-          <Image src="/qrcode.png" width={120} height={120} alt="qrcode" className='object-contain' />
+          <Image
+            src="/qrcode.png"
+            width={120}
+            height={120}
+            alt="qrcode"
+            className="object-contain"
+          />
         </div>
         <div className="flex flex-col gap-2 ml-4">
-          <Image src="/andriod.png" width={200} height={55} alt="android" className='object-contain cursor-pointer'
+          <Image
+            src="/andriod.png"
+            width={200}
+            height={55}
+            alt="android"
+            className="object-contain cursor-pointer"
             onClick={() => {
-              router.push(Android_Download)
-            }
-            } />
-          <Image src="/apple.png" width={200} height={55} alt="ios" className='object-contain cursor-pointer'
-            onClick={() => router.push('/addIcon')} />
+              router.push(Android_Download);
+            }}
+          />
+          <Image
+            src="/apple.png"
+            width={200}
+            height={55}
+            alt="ios"
+            className="object-contain cursor-pointer"
+            onClick={() => router.push("/addIcon")}
+          />
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   return (
-    <div className={`flex min-h-screen flex-col items-center justify-between bg-black`} >
-      <div className="flex relative w-full h-full pt-[200px] flex-col pb-[100px] sm:pb-28"
+    <div
+      className={`flex min-h-screen flex-col items-center justify-between bg-black `}
+    >
+      <div
+        className="flex relative w-full h-full pt-24 flex-col pb-4 sm:pb-28"
         style={{
           backgroundImage: "url('/bg-1.jpg')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center bottom',
-          backgroundSize: 'cover',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+          backgroundSize: "cover",
         }}
       >
-        <div className="w-[90%] mx-auto pt-0 sm:pt-10 flex flex-col justify-center items-center">
-          <div className="w-full max-w-[753px] ">
+        {/* <ResponsiveImage src="/why-aime.png" /> */}
+        <div className="w-[90%] max-w-[1200px] mx-auto pt-0 sm:pt-10 text-center text-white">
+          <div className="w-full max-w-[753px]  mx-auto">
             <ResponsiveImage src="/why-aime.png" />
           </div>
           <div className="text-left w-full text-white font-serif text-[38px] italic mt-16 lg:mt-32 mb-4 pl-4">
-            Pioneering AI Face-Swapping for Live Streaming</div>
+            Pioneering AI Face-Swapping for Live Streaming
+          </div>
           <div className="w-full flex justify-center items-center">
-            <div className="flex flex-1 justify-center items-center rounded-[30px] 
+            <div
+              className="flex flex-1 justify-center items-center rounded-[30px] 
                p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
             >
               <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />
@@ -61,59 +83,112 @@ const Home = () => {
       </div>
 
       <div className="sm:hidden block">
-        <div className='flex flex-row gap-4 mt-4 mb-2'>
-          <Image src="/andriod.png" width={150} height={60} alt="logo" className='object-contain' />
-          <Image src="/apple.png" width={150} height={60} alt="logo" className='object-contain'
-            onClick={() => router.push('/addIcon')} />
+        <div className="flex flex-row gap-4 mt-4 mb-2">
+          <Image
+            src="/andriod.png"
+            width={150}
+            height={60}
+            alt="logo"
+            className="object-contain"
+          />
+          <Image
+            src="/apple.png"
+            width={150}
+            height={60}
+            alt="logo"
+            className="object-contain"
+            onClick={() => router.push("/addIcon")}
+          />
         </div>
-        <p className='font-serif text-2xl text-white mb-4 text-center'>Download now</p>
+        <p className="font-serif text-2xl text-white mb-4 text-center">
+          Download now
+        </p>
       </div>
 
       {/* section 2 */}
-      <div className="flex relative w-full h-full flex-col lg:flex-row justify-center z-10 bg-white"
-        style={{
-          backgroundImage: "url('/bg-blue.png')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'right top',
-          backgroundSize: 'cover',
-        }}>
-        <div className="flex flex-col lg:flex-row relative w-full max-w-[1400px] lg:pt-10 lg:pb-32 lg:pl-8">
-
-          {/* left heart logo column */}
-          <div className="flex flex-col justify-center items-center w-full flex-1 lg:pr-10 px-6">
-            <div className="mt-10 lg:mt-20 ">
-              <Image src="/1on1.png" width={200} height={200} alt="1on1 logo" />
-              <p className="text-black text-[54px] font-serif italic">
-                Private Room--<br />
-                for 1-on-1 Live Streaming</p>
-              <p className="text-black text-[24px] mt-10 mb-20 font-serif">
-                Focus your talents on subscribers who truly value your work, without the pressure of large audiences.
-              </p>
-            </div>
-          </div>
-
-          {/* right video */}
-          <div className="flex flex-1 justify-center items-center relative  mb-10 lg:mt-0 lg:mb-10">
-
-            {/* video */}
-            <div className="rounded-[40px] w-[88%] max-w-[375px] lg:w-[390px] h-[815px] absolute top-0 lg:top-[100px]">
-              <video controls={false} autoPlay muted loop playsInline
-                className="w-full h-full object-cover rounded-[50px]"
-              >
-                <source src="/1on1.mov" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-            {/* frame */}
-            <div className="rounded-[30px] w-[100%] max-w-[408px] lg:w-[408px] h-[820px] lg:absolute top-[95px] ml-2 lg:ml-0 mt-[-5px]">
-              <div className=" w-[97%] lg:w-[408px] h-[832px] relative">
-                <Image src="/frame.png" fill sizes="100%" alt="frame" className="z-40" />
+      <div className="bg-black w-full pb-[100px] sm:pb-[200px]">
+        <div className="flex relative w-full h-full flex-col bg-white  ">
+          <div
+            className="flex relative w-full h-full flex-row justify-center bg-white"
+            style={{
+              backgroundImage: "url('/bg-blue.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center top",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="flex flex-col lg:flex-row relative w-full lg:p-10 max-w-[1300px] ">
+              {/* left side */}
+              <div className="flex flex-col justify-center items-center w-full flex-1">
+                <div className="mt-10 lg:mt-20 lg:mb-20 px-4">
+                  <Image
+                    src="/1on1.png"
+                    width={200}
+                    height={200}
+                    alt="1on1 logo"
+                  />
+                  <div className="flex flex-row">
+                    <div className="w-[6px] h-[150px] relative mr-[34px] mt-4">
+                      <Image
+                        src="/line-v.png"
+                        fill
+                        sizes="100%"
+                        alt="private show"
+                        className="object-fit"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-black text-[54px] font-serif italic">
+                        Private Room-- <br />
+                        for 1-on-1 Live Streaming
+                      </p>
+                      <p className="text-black text-[24px] mt-[35px] mb-10 font-serif">
+                        Focus your talents on subscribers who truly value your
+                        work, without the pressure of large audiences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="absolute w-[98%]  max-w-[420px] bottom-2 lg:ml-[-120px]">
-                <div className="w-full lg:w-[520px] h-[220px] lg:h-[320px] relative scale-90 z-40 ml-[-16px] lg:ml-0">
-                  <Image src="/video-graphics.png" fill sizes="100%" alt="frame" className="z-40" />
+              {/* right side */}
+              <div className="flex w-full lg:w-[500px] justify-center lg:justify-end relative">
+                <div className="rounded-[40px] w-full max-w-[375px] lg:w-[390px] h-[805px] lg:absolute right-[18px] top-[14px]">
+                  <video
+                    controls={false}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover rounded-[50px] mt-2 sm:mt-0 "
+                  >
+                    <source src="/1on1.mov" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <div className="rounded-[30px] w-[100%] max-w-[408px] lg:w-[408px] h-[820px] absolute ">
+                  <div className="w-full max-w-[408px] lg:w-[408px] h-full relative">
+                    <Image
+                      src="/frame.png"
+                      fill
+                      sizes="100%"
+                      alt="frame"
+                      className="z-40"
+                    />
+                  </div>
+
+                  <div className="absolute w-[98%] lg:max-w-[320px] bottom-2 lg:ml-[-140px]">
+                    <div className="w-full lg:w-[520px] h-[220px] lg:h-[320px] relative scale-90 z-40 ml-[-16px] lg:ml-0">
+                      <Image
+                        src="/video-graphics.png"
+                        fill
+                        sizes="100%"
+                        alt="frame"
+                        className="z-40"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,23 +196,26 @@ const Home = () => {
         </div>
       </div>
 
-
       {/* section 3 */}
-      <div className="flex relative w-full h-full flex-col justify-center items-center mt-10 lg:mt-40 "
+      <div
+        className="flex relative w-full h-full flex-col justify-center items-center"
         style={{
           backgroundImage: "url('/bg-3.png')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center top',
-          backgroundSize: 'cover',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+          backgroundSize: "cover",
         }}
       >
-
         {/* Private show */}
-        <div className="flex w-full max-w-7xl flex-col xl:flex-row mt-10 sm:mt-40 mb-20 sm:mb-0 px-4 gap-4">
-
+        <div className="flex w-full max-w-7xl flex-col xl:flex-row mt-10 sm:mt-20 mb-20 sm:mb-0 px-4 gap-4">
           <div className="flex flex-1 justify-center items-center">
             <div className="rounded-[30px] w-[600px] h-[800px]">
-              <video controls={false} autoPlay muted loop playsInline
+              <video
+                controls={false}
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-full object-cover rounded-[40px]"
               >
                 <source src="/privateShow.mov" type="video/mp4" />
@@ -149,14 +227,23 @@ const Home = () => {
           <div className="flex flex-1 items-center justify-center mt-10 sm:mt-0 text-white pl-2 sm:pl-16">
             <div className="flex flex-row">
               <div className="w-[10px] h-[380px] relative">
-                <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
+                <Image
+                  src="/line-v.png"
+                  fill
+                  sizes="100%"
+                  alt="private show"
+                  className="object-fit"
+                />
               </div>
-              <div className="flex flex-col pl-8 sm:ml-16">
+              <div className="flex flex-col pl-8 sm:ml-2">
                 <p className="text-white text-[54px] font-serif italic">
-                  Private Room--<br />
-                  for 1-on-1 Live Streaming</p>
+                  Private Show--
+                  <br />
+                  Your Personal Stage to Shine
+                </p>
                 <p className="text-white text-[20px] mt-10 mb-20 ">
-                  Imagine, create and perform your way. Host intimate shows, set your own pricing and audience limits.
+                  Imagine, create and perform your way. Host intimate shows, set
+                  your own pricing and audience limits.
                 </p>
               </div>
             </div>
@@ -164,158 +251,258 @@ const Home = () => {
         </div>
 
         {/* Exclusive Media Unlock */}
-        <div className="flex w-full max-w-[1300px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-16">
+        <div className="flex w-full max-w-[1300px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-8">
           <div className="flex flex-row flex-1 justify-center items-center">
             <div className="w-[6px] h-[260px] relative">
-              <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
+              <Image
+                src="/line-v.png"
+                fill
+                sizes="100%"
+                alt="private show"
+                className="object-fit"
+              />
             </div>
             <div className="flex flex-col ml-8">
               <p className="text-white text-[54px] font-serif italic">
-                Exclusive Media Unlock</p>
+                Exclusive Media Unlock
+              </p>
               <p className="text-white text-[20px] mt-10 ">
-                Directly monetize content that matches your
-                fans' preferences
+                Directly monetize content that matches your fans' preferences
               </p>
             </div>
           </div>
 
           <div className="flex flex-1 flex-col">
-
-            <div className="w-full h-[560px] sm:h-[750px] relative cursor-pointer"
+            <div
+              className="w-full h-[560px] sm:h-[750px] relative cursor-pointer"
               onClick={() => {
-                setOpen1(!open1)
-                setOpen2(false)
-                setOpen3(false)
-              }}>
-              <Image src="/unlock1.png" fill sizes="100%" alt="unlock-image" className="object-cover rounded-[30px]" />
+                setOpen1(!open1);
+                setOpen2(false);
+                setOpen3(false);
+              }}
+            >
+              <Image
+                src="/unlock1.png"
+                fill
+                sizes="100%"
+                alt="unlock-image"
+                className="object-cover rounded-[30px]"
+              />
 
-              {!open1 ?
+              {!open1 ? (
                 <div className="flex justify-center items-center w-full h-full absolute rounded-[30px]">
-                  <Image src="/unlock-now.png" width={266} height={112} alt="unlock-image" className="object-contain" />
+                  <Image
+                    src="/unlock-now.png"
+                    width={266}
+                    height={112}
+                    alt="unlock-image"
+                    className="object-contain"
+                  />
                 </div>
-                :
+              ) : (
                 <QRcodeButtons />
-              }
-
+              )}
             </div>
           </div>
         </div>
 
         {/* Exclusive Media Unlock */}
-        <div className="flex w-full max-w-[1200px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-16">
-
+        <div className="flex w-full max-w-[1200px] flex-col sm:flex-row mt-4 sm:mt-40 p-4 gap-8">
           <div className="flex flex-1 flex-col">
-            <div className="w-full h-[570px] sm:h-[741px] relative cursor-pointer"
+            <div
+              className="w-full h-[570px] sm:h-[741px] relative cursor-pointer"
               onClick={() => {
-                setOpen2(!open2)
-                setOpen1(false)
-                setOpen3(false)
-              }}>
-              <Image src="/custom.png" fill sizes="100%" alt="unlock-image" className="object-cover rounded-[30px]" />
+                setOpen2(!open2);
+                setOpen1(false);
+                setOpen3(false);
+              }}
+            >
+              <Image
+                src="/custom.png"
+                fill
+                sizes="100%"
+                alt="unlock-image"
+                className="object-cover rounded-[30px]"
+              />
               {open2 && <QRcodeButtons />}
             </div>
-
           </div>
 
           <div className="flex flex-row flex-1 justify-center items-center">
             <div className="w-[6px] h-[260px] relative">
-              <Image src="/line-v.png" fill sizes="100%" alt="private show" className="object-fit" />
+              <Image
+                src="/line-v.png"
+                fill
+                sizes="100%"
+                alt="private show"
+                className="object-fit"
+              />
             </div>
             <div className="flex flex-col ml-8">
               <p className="text-white text-[54px] font-serif italic">
-                Customized Media</p>
+                Customized Media
+              </p>
               <p className="text-white text-[20px] mt-10 ">
                 Signed visuals tailored by Hosts deserve good value
               </p>
             </div>
           </div>
-
         </div>
 
         {/* Chat with Fans Using an AI Persona */}
-        <div className="mx-4 cursor-pointer"
+        <div
+          className="mx-4 cursor-pointer"
           onClick={() => {
-            setOpen3(!open3)
-            setOpen1(false)
-            setOpen2(false)
-          }}>
-          <div className="text-white flex relative w-full max-w-6xl h-full my-40 p-[2px] bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF] rounded-[25px]"
-          >
+            setOpen3(!open3);
+            setOpen1(false);
+            setOpen2(false);
+          }}
+        >
+          <div className="text-white flex relative w-full max-w-6xl h-full my-40 p-[2px] bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF] rounded-[25px]">
             <div
               className="w-full rounded-[22px]"
               style={{
                 backgroundImage: "url('/bg-4.png')",
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center top',
-                backgroundSize: 'cover',
-              }}>
-
-              <div className="flex py-10 px-4 sm:px-20 flex-col-reverse sm:flex-row justify-between items-center">
-                <div className="flex flex-col justify-center w-full sm:w-1/2">
-                  <p className="font-serif text-[52px] italic leading-[60px] mb-6">Chat with Fans Using an AI Persona</p>
-                  <p className="mb-2 text-[20px] font-serif">You can’t chat with 100 fans at once, but "it" can! Plus, users can chat with AI persona at a low cost</p>
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center top",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="flex py-20 px-4 sm:px-20 flex-col-reverse sm:flex-row justify-between items-center gap-16">
+                <div className="flex flex-col justify-center w-full flex-1">
+                  <p className="font-serif text-[52px] italic leading-[60px] mb-6">
+                    Chat with Fans Using an AI Persona
+                  </p>
+                  <p className="mb-2 text-[20px] font-serif">
+                    You can’t chat with 100 fans at once, but “it” can.<br />
+                    Continuously infuse your personality into the knowledge
+                    base, so your AI persona can represent you and chat with
+                    even more fans
+                  </p>
                 </div>
 
-                <Image src="/ai-icon.png" width={232} height={232} alt="ai-icon" />
+                <Image
+                  src="/ai-icon.png"
+                  width={232}
+                  height={232}
+                  alt="ai-icon"
+                />
               </div>
             </div>
 
-            {open3 && <div className="flex justify-center sm:justify-end items-center sm:pr-20 w-[calc(100%-4px)] h-[calc(100%-4px)] absolute bg-[rgba(0,0,0,0.7)] rounded-[30px]">
-              <div className="flex flex-row gap-6">
-                <Image src="/qrcode.png" width={120} height={120} alt="qrcode" className='object-contain' />
+            {open3 && (
+              <div className="flex justify-center sm:justify-end items-center sm:pr-20 w-[calc(100%-4px)] h-[calc(100%-4px)] absolute bg-[rgba(0,0,0,0.7)] rounded-[30px]">
+                <div className="flex flex-row gap-6">
+                  <Image
+                    src="/qrcode.png"
+                    width={120}
+                    height={120}
+                    alt="qrcode"
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col gap-2 ml-4">
+                  <Image
+                    src="/andriod.png"
+                    width={200}
+                    height={55}
+                    alt="android"
+                    className="object-contain cursor-pointer"
+                    onClick={() => {
+                      router.push(Android_Download);
+                    }}
+                  />
+                  <Image
+                    src="/apple.png"
+                    width={200}
+                    height={55}
+                    alt="ios"
+                    className="object-contain cursor-pointer"
+                    onClick={() => router.push("/addIcon")}
+                  />
+                </div>
               </div>
-              <div className="flex flex-col gap-2 ml-4">
-                <Image src="/andriod.png" width={200} height={55} alt="android" className='object-contain cursor-pointer'
-                  onClick={() => {
-                    router.push(Android_Download)
-                  }
-                  } />
-                <Image src="/apple.png" width={200} height={55} alt="ios" className='object-contain cursor-pointer'
-                  onClick={() => router.push('/addIcon')} />
-              </div>
-            </div>}
-
+            )}
           </div>
         </div>
       </div>
 
       {/* section 4 - start to chat */}
-      <div className="flex relative w-full h-full flex-col items-center pb-20 px-4 bg-white"
+      <div
+        className="flex relative w-full h-full flex-col items-center pb-20 px-4 bg-white"
         style={{
           backgroundImage: "url('/bg-5.png')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center top',
-          backgroundSize: 'cover',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+          backgroundSize: "cover",
         }}
       >
         <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-40 px-4">
-          <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <Image
+            src="/line-l.png"
+            width={120}
+            height={6}
+            alt="line"
+            className="object-contain hidden sm:block"
+          />
           <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
             Fair and Fast Payouts
           </p>
-          <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <Image
+            src="/line-r.png"
+            width={120}
+            height={6}
+            alt="line"
+            className="object-contain hidden sm:block"
+          />
         </div>
         <div className="text-[20px] my-[60px] text-center px-4">
-          Earn 80% of your revenue with the option for immediate withdrawals on transactions exceeding 100 coins.
+          Earn 80% of your revenue with the option for immediate withdrawals on
+          transactions exceeding 100 coins.
         </div>
-        <Image src="/payment.png" width={523} height={720} alt="ai-icon" className=" cursor-pointer" />
+        <Image
+          src="/payment.png"
+          width={523}
+          height={720}
+          alt="ai-icon"
+          className=" cursor-pointer"
+        />
         <div className="text-[20px] my-16 text-center px-4">
-          Step into the future of live streaming with AI Me, the premier AI-enhanced live streaming platform.
+          Step into the future of live streaming with AI Me, the premier
+          AI-enhanced live streaming platform.
         </div>
 
         <div className="flex flex-row gap-2 w-full max-w-[1000px] justify-center items-center mt-[156px] px-4">
-          <Image src="/line-l.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <Image
+            src="/line-l.png"
+            width={120}
+            height={6}
+            alt="line"
+            className="object-contain hidden sm:block"
+          />
           <p className="flex-1 font-serif text-[55px] italic leading-[50px] text-[#171717] font-bold scale-y-110 text-center">
             Business Model:
           </p>
-          <Image src="/line-r.png" width={120} height={6} alt="line" className="object-contain hidden sm:block" />
+          <Image
+            src="/line-r.png"
+            width={120}
+            height={6}
+            alt="line"
+            className="object-contain hidden sm:block"
+          />
         </div>
         <div className=" flex flex-col items-center p-6 max-w-[1000px] mt-4 px-4">
           <p className="text-lg text-gray-700 mb-6 text-center">
-            Explore our diverse range of monetization options designed to maximize your earnings and engage your audience. Whether through personalized one-on-one sessions, exclusive content, or interactive AI persona chats, our platform offers multiple avenues for generating income.
+            Explore our diverse range of monetization options designed to
+            maximize your earnings and engage your audience. Whether through
+            personalized one-on-one sessions, exclusive content, or interactive
+            AI persona chats, our platform offers multiple avenues for
+            generating income.
           </p>
           <div className="w-full max-w-2xl bg-white p-4 sm:p-10 rounded-lg shadow-md mb-4 border mt-6">
-            <h2 className="text-2xl text-center font-semibold text-blue-800 font-serif italic">Services through which you can earn</h2>
+            <h2 className="text-2xl text-center font-semibold text-blue-800 font-serif italic">
+              Services through which you can earn
+            </h2>
             <ul className="list-disc list-inside text-gray-700 mt-6">
               <li>1-on-1 Paid</li>
               <li>Private Shows</li>
@@ -330,10 +517,9 @@ const Home = () => {
           For more details, please contact: aime@aimeai.live
         </p>
       </div>
-
-    </div >
+    </div>
   );
-}
+};
 
-Home.getLayout = getLayout
-export default Home
+Home.getLayout = getLayout;
+export default Home;

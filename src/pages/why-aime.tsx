@@ -514,7 +514,7 @@ const Home = () => {
           </div>
         </div>
         <p className="text-lg text-gray-700 mb-6 text-center">
-          For more details, please contact: aime@aimeai.live
+          For more details, please contact: aime@aimechat.live
         </p>
       </div>
     </div>

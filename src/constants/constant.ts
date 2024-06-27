@@ -1,4 +1,4 @@
-export const H5_URL = "https://aime.hellokit.uk/login"
+export const H5_URL = "https://h5.aimechat.live"
 
 export const Android_Download = "https://onlyforyou.live/api/android/download"
 

@@ -70,7 +70,7 @@ const Home = () => {
               className="flex flex-1 justify-center items-center rounded-[30px] mt-0 lg:mt-28 
                p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
             >
-              <ResponsiveImage src="/main-1.jpg" className="rounded-[25px]" />
+              <ResponsiveImage src="/main-2.jpg" className="rounded-[25px]" />
             </div>
           </div>
           <div className="font-serif text-3xl sm:text-[45px] italic mt-2 sm:mt-8 sm:leading-[70px]">

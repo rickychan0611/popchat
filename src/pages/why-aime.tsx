@@ -457,8 +457,7 @@ const Home = () => {
           />
         </div>
         <div className="text-[20px] my-[60px] text-center px-4">
-          Earn 80% of your revenue with the option for immediate withdrawals on
-          transactions exceeding 100 coins.
+          Earn 80% of your revenue with the option for immediate withdrawals every Wednesday
         </div>
         <Image
           src="/payment.png"

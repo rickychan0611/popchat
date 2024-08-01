@@ -57,7 +57,7 @@ const HostGuide = () => {
               <strong>2. Private Shows: Host-Set Pricing</strong><br />
               For example: A 30-minute show: Ticket Price $30 each, Limit: 200 people
             </li>
-            <Image src="/host-2-show.png" width={300} height={400} alt="show" className="object-contain" />
+            <Image src="/unlock.png" width={300} height={400} alt="show" className="object-contain" />
             <li className="mt-4">
               <strong>3. Exclusive Video/Photo Unlock: Host-Set Pricing</strong><br />
               Average Pricing: $15 per item

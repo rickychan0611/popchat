@@ -7,7 +7,7 @@ const privacyPolicy = () => {
       <h1 className='my-8 text-center'>Privacy Policy</h1>
       <p>
         We are a limited liability company registered in British Columbia, Canada, with the website address
-        <a href="http://www.aimechat.live">http://www.aimechat.live</a> (referred to in this document as "the Website"). This
+        <a href="http://www..aimeai.live">http://www..aimeai.live</a> (referred to in this document as "the Website"). This
         Privacy Policy outlines how
         Digipal
         Tech Inc. and its affiliates, (referred to in this document as "AI Me," "the Company," "we," or "our") collect and
@@ -310,7 +310,7 @@ const privacyPolicy = () => {
         when submitting personal information. Once information is submitted or posted, you may not be able to edit or
         delete
         it. If you wish to remove your personal information that you have submitted or posted, please contact us at
-        <a href="aime@aimechat.live">aime@aimechat.live</a>. In some cases, we may not be able to remove your personal
+        <a href="aime@.aimeai.live">aime@.aimeai.live</a>. In some cases, we may not be able to remove your personal
         information, and if this occurs,
         we will
         explain why it cannot be removed.</p>
@@ -451,7 +451,7 @@ const privacyPolicy = () => {
         Nevertheless, we still respect the right of California residents to opt out of such sharing arrangements and
         prevent
         their personal information from being sold in the future. If the California Consumer Privacy Act (CCPA) applies to
-        you and you wish to register such preferences, please email us at <a href="aime@aimechat.live">aime@aimechat.live</a>.
+        you and you wish to register such preferences, please email us at <a href="aime@.aimeai.live">aime@.aimeai.live</a>.
       </p>
       <br/><h2>
         15. Policy on Minors
@@ -461,7 +461,7 @@ const privacyPolicy = () => {
         majority in the jurisdiction from which they access our website, and we do not knowingly collect personal data
         from
         minors. If you become aware of any minors who have provided us with personal data, please contact us at
-        <a href="aime@aimechat.live">aime@aimechat.live</a>. Upon verification and confirmation, we will take steps to remove
+        <a href="aime@.aimeai.live">aime@.aimeai.live</a>. Upon verification and confirmation, we will take steps to remove
         such
         information and
         immediately
@@ -472,7 +472,7 @@ const privacyPolicy = () => {
         significant changes to the Privacy Policy, we encourage you to read our website to review the most current version
         of the policy and stay informed of any updates or changes.</p>
       <p>If you have any questions about this Privacy Policy, or if you wish to make a complaint about how we use your
-        personal data, please contact us via email at <a href="aime@aimechat.live">aime@aimechat.live</a> or by mail. We will
+        personal data, please contact us via email at <a href="aime@.aimeai.live">aime@.aimeai.live</a> or by mail. We will
         investigate based on the
         information you provide and respond within a reasonable timeframe. We will cooperate with the appropriate
         regulatory

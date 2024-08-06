@@ -57,12 +57,12 @@ const HostGuide = () => {
               <strong>2. Private Shows: Host-Set Pricing</strong><br />
               For example: A 30-minute show: Ticket Price $30 each, Limit: 200 people
             </li>
-            <Image src="/unlock.png" width={300} height={400} alt="show" className="object-contain" />
+            <Image src="/host-2-show.png" width={300} height={400} alt="show" className="object-contain" />
             <li className="mt-4">
               <strong>3. Exclusive Video/Photo Unlock: Host-Set Pricing</strong><br />
               Average Pricing: $15 per item
             </li>
-            <Image src="/host-3-video.png" width={350} height={400} alt="show" className="object-contain" />
+            <Image src="/unlock.png" width={350} height={400} alt="show" className="object-contain" />
             <li className="mt-4">
               <strong>4. Custom Media: Agreed Pricing</strong><br />
               Recommended Range: $5 - $100 per item
@@ -73,11 +73,7 @@ const HostGuide = () => {
               Range: $0.1 - $20
             </li>
             <Image src="/host-5-tips.png" width={300} height={400} alt="show" className="object-contain" />
-            <li className="mt-4">
-              <strong>6. AI Persona Chat: Host-Set Pricing</strong><br />
-              Range: $1 - $20 per hour
-            </li>
-            <Image src="/host-6-ai.png" width={250} height={400} alt="show" className="object-contain" />
+            
           </ul>
         </div>
 
@@ -145,9 +141,6 @@ const HostGuide = () => {
             Ensure that your payment details are accurate to prevent any delays in receiving payments. Other than weekly withdrawals via bank transfer, you can withdraw daily using other methods, with a minimum transaction of $100.
           </p>
           <ul className="list-disc list-inside mt-4">
-            <li>Paxum (Instant transfer)</li>
-            <li>CosmoPay (Instant transfer)</li>
-            <li>Yousafe (Instant transfer)</li>
             <li>Cryptocurrency (Bitcoin, Ethereum, USDC, Tether) (Instant transfer)</li>
             <li>Euro Wire Transfer (SEPA): Within 2-10 business days</li>
             <li>ACH/Direct Deposit: Within 2-10 business days</li>

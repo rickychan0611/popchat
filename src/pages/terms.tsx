@@ -10,7 +10,7 @@ const Terms = () => {
           We are AI Me, and our office is in British Columbia, Canada. Please carefully
           read the Terms and Conditions of use for our website, which include but are
           not limited to the website listed below:
-          <a href="http://www.aimechat.live">http://www.aimechat.live</a> This document
+          <a href="http://www..aimeai.live">http://www..aimeai.live</a> This document
           stipulates the terms and conditions under which DIGIPAL TECH INC. (hereafter
           referred to as &quot;AI Me&quot; or &quot;we&quot; or &quot;our&quot;)
           provides services on its website, including but not limited to the websites
@@ -579,7 +579,7 @@ const Terms = () => {
           that content on our website infringes on your copyright, please refer to our
           terms of use and report it to us through the designated method. for receiving
           infringement claims notifications，please email to
-          <a href="mailto:talentaime@gmail.com">aime@aimechat.live</a>.
+          <a href="mailto:talentaime@gmail.com">aime@.aimeai.live</a>.
         </p>
         <br /><p><strong>Repeat Infringement Policy: </strong></p>
         <p>

@@ -10,10 +10,6 @@ export const general = [
     "answer": "A private show is an exclusive performance set by the host, who determines the program and price, while limiting the number of viewers. Audience members must purchase tickets to attend. This personal stage for the host is ideal for various applications, such as teaching, performing, stand-up comedy, and special lectures."
   },
   {
-    "question": "What is AI persona?",
-    "answer": "An AI avatar is trained by the host to reflect their personality traits. The host continuously feeds their personal knowledge base and conversation records to the AI, allowing it to evolve and become increasingly similar to the host. Users can interact with the AI avatar at any time, at a significantly lower cost than a 1-on-1 conversation with the host."
-  },
-  {
     "question": "How can I chat privately with a host?",
     "answer": "Find the host’s profile page and click the message button."
   },

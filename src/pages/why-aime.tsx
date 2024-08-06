@@ -65,7 +65,7 @@ const Home = () => {
           <div className="w-full max-w-[753px]  mx-auto">
             <ResponsiveImage src="/why-aime.png" />
           </div>
-          <div className="text-left w-full text-white font-serif text-[38px] italic mt-16 lg:mt-32 mb-4 pl-4">
+          {/* <div className="text-left w-full text-white font-serif text-[38px] italic mt-16 lg:mt-32 mb-4 pl-4">
             Pioneering AI Face-Swapping for Live Streaming
           </div>
           <div className="w-full flex justify-center items-center">
@@ -78,7 +78,7 @@ const Home = () => {
           </div>
           <div className="text-white text-center text-[28px] mt-[30px] mx-4">
             Captivate your audience with a dynamic on-screen presence.
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -198,7 +198,7 @@ const Home = () => {
 
       {/* section 3 */}
       <div
-        className="flex relative w-full h-full flex-col justify-center items-center"
+        className="flex relative w-full h-full flex-col justify-center items-center pb-[100px]"
         style={{
           backgroundImage: "url('/bg-3.png')",
           backgroundRepeat: "no-repeat",
@@ -350,7 +350,7 @@ const Home = () => {
         </div>
 
         {/* Chat with Fans Using an AI Persona */}
-        <div
+        {/* <div
           className="mx-4 cursor-pointer"
           onClick={() => {
             setOpen3(!open3);
@@ -424,7 +424,7 @@ const Home = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* section 4 - start to chat */}
@@ -508,12 +508,12 @@ const Home = () => {
               <li>Exclusive Video/Photo Unlock</li>
               <li>Custom Media</li>
               <li>Tips</li>
-              <li>AI persona chat income</li>
+              {/* <li>AI persona chat income</li> */}
             </ul>
           </div>
         </div>
         <p className="text-lg text-gray-700 mb-6 text-center">
-          For more details, please contact: aime@aimechat.live
+          For more details, please contact: aime@.aimeai.live
         </p>
       </div>
     </div>

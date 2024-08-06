@@ -53,7 +53,7 @@ const Home = () => {
       className={`flex min-h-screen flex-col items-center justify-between bg-black `}
     >
       <div
-        className="flex relative w-full h-full pt-24 flex-col pb-4 sm:pb-28"
+        className="flex relative w-full h-full  flex-col pb-4"
         style={{
           backgroundImage: "url('/bg-1.jpg')",
           backgroundRepeat: "no-repeat",
@@ -63,27 +63,10 @@ const Home = () => {
       >
         <NavMenu />
 
-        <div className="w-[90%] max-w-[1200px] mx-auto pt-0 sm:pt-10 text-center text-white">
-          <ResponsiveImage src="/briefIntroduction.png" />
-          <div className="w-full flex justify-center mt-6">
-            <div
-              className="flex flex-1 justify-center items-center rounded-[30px] mt-0 lg:mt-28 
-               p-1 sm:p-2 m-4 bg-gradient-to-r from-[#FF1CF7] to-[#00F0FF]"
-            >
-              <ResponsiveImage src="/main-2.jpg" className="rounded-[25px]" />
-            </div>
-          </div>
-          <div className="font-serif text-3xl sm:text-[45px] italic mt-2 sm:mt-8 sm:leading-[70px]">
-            AI Face-Swapping
-          </div>
-          <div className="text-lg sm:text-[18px] font-serif mb-4 mt-2 sm:mt-7">
-            Realistic and Vibrant, Transcend Yourself
-          </div>
-        </div>
       </div>
 
-      <div className="sm:hidden block">
-        <div className="flex flex-row gap-4 mt-4 mb-2">
+      {/* <div className="sm:hidden block">
+        <div className="flex flex-row gap-4  mb-2">
           <Image
             src="/andriod.png"
             width={150}
@@ -104,13 +87,13 @@ const Home = () => {
         <p className="font-serif text-2xl text-white mb-4 text-center">
           Download now
         </p>
-      </div>
+      </div> */}
 
       {/* section 2 */}
       <div className="bg-black w-full pb-[100px] sm:pb-[200px]">
-        <div className="flex relative w-full h-full flex-col bg-white  ">
+        <div className="flex relative w-full h-full flex-col bg-white ">
           <div
-            className="flex relative w-full h-full flex-row justify-center bg-white"
+            className="flex relative w-full h-full flex-row justify-center bg-white pt-[100px] "
             style={{
               backgroundImage: "url('/bg-blue.png')",
               backgroundRepeat: "no-repeat",
@@ -198,7 +181,7 @@ const Home = () => {
 
       {/* section 3 */}
       <div
-        className="flex relative w-full h-full flex-col justify-center items-center"
+        className="flex relative w-full h-full flex-col justify-center items-center pb-[100px]"
         style={{
           backgroundImage: "url('/bg-3.png')",
           backgroundRepeat: "no-repeat",
@@ -328,7 +311,7 @@ const Home = () => {
         </div>
 
         {/* Chat with Fans Using an AI Persona */}
-        <div
+        {/* <div
           className="mx-4 cursor-pointer"
           onClick={() => {
             setOpen3(!open3);
@@ -400,7 +383,7 @@ const Home = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* section 4 - start to chat */}

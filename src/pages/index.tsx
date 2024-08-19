@@ -1,15 +1,21 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 type Props = {};
 
 function index({}: Props) {
+  const divRef = useRef<any>();
+
+  useEffect(() => {
+    divRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
-    <div className="bg-[#F9F6FC] min-h-screen">
-      <div className="max-w-[1400px] mx-auto relative">
+    <div className="bg-white min-h-screen font-[poppins]">
+      <div className="max-w-[1300px] mx-auto relative">
         {/* app bar */}
-        <div className="fixed top-6 flex flex-row justify-between items-center w-full max-w-[1400px] mx-auto px-16 z-10">
+        <div className="absolute top-6 flex flex-row justify-between items-center w-full max-w-[1300px] mx-auto px-16 z-10">
           <div className="flex flex-row gap-5">
             <Image
               src={"/logo.png"}
@@ -151,7 +157,135 @@ function index({}: Props) {
             className="object-fit"
           />
         </div>
+        <div className="absolute top-[850px] right-[105px]">
+          <Image
+            src="/shadow.png"
+            width={400}
+            height={100}
+            alt="frame"
+            className="object-fit"
+          />
+        </div>
+
+        {/* 2nd section */}
+        <div className="pt-[calc(100vh+50px)] right-0 w-full flex flex-col items-center relative">
+          
+          {/* background decor */}
+          <div className="absolute top-[1100px] left-[100px] flex justify-start items-start w-full">
+            <Image src={"/shoes.png"} width={89} height={1} alt="line" />
+          </div>
+          <div className="absolute top-[1180px] right-0 flex justify-start items-start">
+            <Image src={"/ball2.png"} width={89} height={1} alt="line" />
+          </div>
+          <div className="absolute top-[1900px] flex justify-start items-start w-full">
+            <Image src={"/ball1.png"} width={752} height={1} alt="line" />
+          </div>
+
+          <div className="text-center text-[58px] font-semibold mb-6">
+            My Stage
+          </div>
+          <Image src={"/line.png"} width={132} height={1} alt="line" />
+          <div className="text-[40px] mt-10">Your personal stage to shine.</div>
+          <div className="text-[40px] mb-20">
+            Showcase your talent to your fans.
+          </div>
+          <Image
+            src={"/section2.png"}
+            width={800}
+            height={1}
+            alt="line"
+            className="z-10 mb-28"
+          />
+
+          {/* section 3 */}
+          <div className="w-full bg-gradient-to-r from-[#BE6AFF] to-[#220FCD] z-[20] flex justify-center items-center p-8 gap-4">
+            <div className="grid grid-cols-2 gap-6 w-full max-w-[1040px]">
+              <div className="bg-white rounded-lg flex flex-row px-12 py-8 gap-10">
+                <Image
+                  src={"/1on1video.png"}
+                  width={80}
+                  height={1}
+                  alt="line"
+                  className="object-contain"
+                />
+                <div className={"flex flex-col"}>
+                  <div className="text-[24px] font-semibold">
+                    1-on-1 Video Chat
+                  </div>
+                  <div>Face-to-face chat with your favorite host.</div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg flex flex-row px-12 py-8 gap-8">
+                <Image
+                  src={"/vs.png"}
+                  width={80}
+                  height={1}
+                  alt="line"
+                  className="object-contain"
+                />
+                <div className={"flex flex-col"}>
+                  <div className="text-[24px] font-semibold">Easy Matching</div>
+                  <div>Quickly and safely make new friends.</div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg flex  flex-row px-12 py-8 gap-8">
+                <Image
+                  src={"/host.png"}
+                  width={80}
+                  height={1}
+                  alt="line"
+                  className="object-contain"
+                />
+                <div className={"flex flex-col"}>
+                  <div className="text-[24px] font-semibold">
+                    Gorgeous Hosts
+                  </div>
+                  <div>Interact with stunning hosts.</div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg flex flex-row px-12 py-8 gap-8">
+                <Image
+                  src={"/safety.png"}
+                  width={80}
+                  height={1}
+                  alt="line"
+                  className="object-contain"
+                />
+                <div className={"flex flex-col"}>
+                  <div className="text-[24px] font-semibold">
+                    Safety Features
+                  </div>
+                  <div>Your safety is our priority. Visit our community.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* section 4 */}
+          <div className="w-full p-[100px]">
+            <ResponsiveImage src={"/group.jpg"} />
+          </div>
+        </div>
       </div>
+
+      <div className="bg-[#09042F] w-full flex flex-col justify-center items-center pt-[50px] text-white">
+        <div className="flex flex-row gap-[100px]">
+          <div className=" cursor-pointer">Contact</div>
+          <div className=" cursor-pointer">Terms of Use</div>
+          <div className=" cursor-pointer">Privacy</div>
+          <div className=" cursor-pointer">Safety Center</div>
+        </div>
+
+        <div className="text-[12px] text-center my-8">
+          <div>@ Copyright PopChat 2023</div>
+          <div>609 West Hastings，Vancouver, BC, Canada V6B 4W4</div>
+        </div>
+      </div>
+
+      <div ref={divRef} />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 type Props = {};
 
-function index({}: Props) {
+const Home = () => {
   const router = useRouter();
 
   return (
@@ -301,4 +301,4 @@ function index({}: Props) {
   );
 }
 
-export default index;
+export default Home;

@@ -1,15 +1,13 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { Android_Download } from "@/constants/constant";
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import { useRouter } from "next/router";
 
 type Props = {};
 
 function index({}: Props) {
-  const divRef = useRef<any>();
-
-  useEffect(() => {
-    divRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, []);
+  const router = useRouter();
 
   return (
     <div className="bg-white min-h-screen font-[poppins]">
@@ -33,27 +31,35 @@ function index({}: Props) {
             />
           </div>
           <div className="flex flex-row gap-5">
-            <Image
-              src={"/x.png"}
-              width={32}
-              height={32}
-              alt="x"
-              className="cursor-pointer"
-            />
-            <Image
-              src={"/tiktok.png"}
-              width={32}
-              height={32}
-              alt="tiktok"
-              className="cursor-pointer"
-            />
-            <Image
-              src={"/Twich.png"}
-              width={32}
-              height={32}
-              alt="Twich"
-              className="cursor-pointer"
-            />
+            <a href="https://x.com/PopChatdotlive" target="_blank">
+              <Image
+                src={"/x.png"}
+                width={32}
+                height={32}
+                alt="x"
+                className="cursor-pointer"
+              />
+            </a>
+            <a href="http://tiktok.com/@PopChat.live" target="_blank">
+              <Image
+                src={"/tiktok.png"}
+                width={32}
+                height={32}
+                alt="tiktok"
+                className="cursor-pointer"
+              />
+            </a>
+
+            <a href="https://www.twitch.tv/popchatlive" target="_blank">
+              <Image
+                src={"/Twich.png"}
+                width={32}
+                height={32}
+                alt="Twich"
+                className="cursor-pointer"
+              />
+            </a>
+
             <div className="cursor-pointer  ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full px-6">
               Community
             </div>
@@ -75,7 +81,7 @@ function index({}: Props) {
           </div>
 
           {/* center text */}
-          <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6">
+          <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6 z-50">
             <div className="flex flex-col justify-center items-center h-[92vh] px-10">
               <div className="font-[Poppins] font-[900] text-[62px]">
                 1-on-1 Video Chat
@@ -88,13 +94,21 @@ function index({}: Props) {
                 <ResponsiveImage src={"/1on1.png"} />
               </div>
               <div className="flex flex-row gap-4 mt-10">
-                <div className="relative w-[180px] h-full cursor-pointer flex-1">
+                <div
+                  className="relative w-[180px] h-full cursor-pointer"
+                  onClick={() => {
+                    router.push(Android_Download);
+                  }}
+                >
                   <ResponsiveImage src={"/download.png"} />
                 </div>
                 <div className="relative w-[180px] h-full cursor-pointer flex-1">
                   <ResponsiveImage src={"/google_play.png"} />
                 </div>
-                <div className="relative w-[180px] h-full cursor-pointer flex-1">
+                <div className="relative w-[180px] h-full cursor-pointer flex-1"
+                 onClick={() => {
+                  router.push("https://aime-h5-test.web.app/");
+                }}>
                   <ResponsiveImage src={"/apple.png"} />
                 </div>
               </div>
@@ -169,7 +183,6 @@ function index({}: Props) {
 
         {/* 2nd section */}
         <div className="pt-[calc(100vh+50px)] right-0 w-full flex flex-col items-center relative">
-          
           {/* background decor */}
           <div className="absolute top-[1100px] left-[100px] flex justify-start items-start w-full">
             <Image src={"/shoes.png"} width={89} height={1} alt="line" />
@@ -284,8 +297,6 @@ function index({}: Props) {
           <div>609 West Hastings，Vancouver, BC, Canada V6B 4W4</div>
         </div>
       </div>
-
-      <div ref={divRef} />
     </div>
   );
 }

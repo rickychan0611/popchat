@@ -11,9 +11,9 @@ const Home = () => {
 
   return (
     <div className="bg-white min-h-screen font-[poppins]">
-      <div className="max-w-[1300px] mx-auto relative">
+      <div className="w-screen max-w-[1380px] mx-auto relative">
         {/* app bar */}
-        <div className="absolute top-6 flex flex-row justify-between items-center w-full max-w-[1300px] mx-auto px-16 z-10">
+        <div className="absolute top-6 flex flex-row justify-between items-center w-full max-w-[1380px] mx-auto px-16 z-10">
           <div className="flex flex-row gap-5">
             <Image
               src={"/logo.png"}
@@ -68,7 +68,7 @@ const Home = () => {
 
         <div className="w-full relative bg-red-200">
           {/* background image */}
-          <div className="absolute top-0 w-[980px] h-[92vh]">
+          <div className="absolute top-0 w-[980px] h-[92vh] max-h-[900px]">
             <div className="relative mt-6 w-full h-full">
               <Image
                 fill
@@ -82,7 +82,7 @@ const Home = () => {
 
           {/* center text */}
           <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6 z-50">
-            <div className="flex flex-col justify-center items-center h-[92vh] px-10">
+            <div className="flex flex-col justify-center items-center h-[92vh]  max-h-[900px] px-10">
               <div className="font-[Poppins] font-[900] text-[62px]">
                 1-on-1 Video Chat
               </div>
@@ -106,79 +106,81 @@ const Home = () => {
                   <ResponsiveImage src={"/google_play.png"} />
                 </div>
                 <div className="relative w-[180px] h-full cursor-pointer flex-1"
-                 onClick={() => {
-                  router.push("https://aime-h5-test.web.app/");
-                }}>
+                  onClick={() => {
+                    router.push("https://aime-h5-test.web.app/");
+                  }}>
                   <ResponsiveImage src={"/apple.png"} />
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="absolute top-[180px] right-0 1200 w-full text-right">
-            <div className="flex flex-col justify-end items-end relative">
-              <div className="relative w-full h-full ">
-                <div className="absolute top-0 right-32 1200">
-                  <div className="mr-2 mt-1 w-[340px] h-[700px] flex flex-col justify-center overflow-hidden">
-                    <video
-                      controls={false}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="w-full h-[1000px] object-cover rounded-[50px] "
-                      src="/1on1.mov"
+          <div className="scale-75 xl:scale-95">
+            <div className="absolute top-[170px] right-0 w-full text-right">
+              <div className="flex flex-col justify-end items-end relative">
+                <div className="relative w-full h-full ">
+                  <div className="absolute top-0 right-32">
+                    <div className="mr-2 mt-1 w-[340px] h-[700px] flex flex-col justify-center overflow-hidden">
+                      <video
+                        controls={false}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-[1000px] object-cover rounded-[50px] "
+                        src="/1on1.mov"
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute top-0 right-32 ">
+                    <Image
+                      src="/frame.png"
+                      width={350}
+                      height={1}
+                      alt="frame"
+                      className="object-fit"
                     />
                   </div>
                 </div>
-                <div className="absolute top-0 right-32 1200 ">
-                  <Image
-                    src="/frame.png"
-                    width={350}
-                    height={1}
-                    alt="frame"
-                    className="object-fit"
-                  />
-                </div>
               </div>
             </div>
+          <div className="absolute top-[300px] right-0">
+            <Image
+              src="/chatbox1.png"
+              width={260}
+              height={1}
+              alt="frame"
+              className="object-fit"
+            />
+          </div>
+          <div className="absolute top-[520px] right-[420px]">
+            <Image
+              src="/chatbox.png"
+              width={280}
+              height={1}
+              alt="frame"
+              className="object-fit"
+            />
+          </div>
+          <div className="absolute top-[650px] right-[150px]">
+            <Image
+              src="/hearts.png"
+              width={290}
+              height={1}
+              alt="frame"
+              className="object-fit"
+            />
+          </div>
+          <div className="absolute top-[850px] right-[105px]">
+            <Image
+              src="/shadow.png"
+              width={400}
+              height={100}
+              alt="frame"
+              className="object-fit"
+            />
           </div>
         </div>
-        <div className="absolute top-[300px] right-0">
-          <Image
-            src="/chatbox1.png"
-            width={260}
-            height={1}
-            alt="frame"
-            className="object-fit"
-          />
-        </div>
-        <div className="absolute top-[520px] right-[420px]">
-          <Image
-            src="/chatbox.png"
-            width={280}
-            height={1}
-            alt="frame"
-            className="object-fit"
-          />
-        </div>
-        <div className="absolute top-[650px] right-[150px]">
-          <Image
-            src="/hearts.png"
-            width={290}
-            height={1}
-            alt="frame"
-            className="object-fit"
-          />
-        </div>
-        <div className="absolute top-[850px] right-[105px]">
-          <Image
-            src="/shadow.png"
-            width={400}
-            height={100}
-            alt="frame"
-            className="object-fit"
-          />
         </div>
 
         {/* 2nd section */}

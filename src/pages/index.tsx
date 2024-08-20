@@ -11,9 +11,9 @@ const Home = () => {
 
   return (
     <div className="bg-white min-h-screen font-[poppins]">
-      <div className="w-screen max-w-[1380px] mx-auto relative">
+      <div className="w-screen min-w-[800px] max-w-[1380px] mx-auto relative overflow-auto">
         {/* app bar */}
-        <div className="absolute top-6 flex flex-row justify-between items-center w-full max-w-[1380px] mx-auto px-16 z-10">
+        <div className="absolute top-6 flex flex-row justify-between items-center w-screen max-w-[1380px] mx-auto px-16 z-10">
           <div className="flex flex-row gap-5">
             <Image
               src={"/logo.png"}
@@ -60,7 +60,7 @@ const Home = () => {
               />
             </a>
 
-            <div className="cursor-pointer  ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full px-6">
+            <div className="cursor-pointer ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full px-6">
               Community
             </div>
           </div>
@@ -68,7 +68,7 @@ const Home = () => {
 
         <div className="w-full relative bg-red-200">
           {/* background image */}
-          <div className="absolute top-0 w-[980px] h-[92vh] max-h-[900px]">
+          <div className="absolute top-0 w-[980px] h-[900px]">
             <div className="relative mt-6 w-full h-full">
               <Image
                 fill
@@ -82,7 +82,7 @@ const Home = () => {
 
           {/* center text */}
           <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6 z-50">
-            <div className="flex flex-col justify-center items-center h-[92vh]  max-h-[900px] px-10">
+            <div className="flex flex-col justify-center items-center h-[900px] px-10">
               <div className="font-[Poppins] font-[900] text-[62px]">
                 1-on-1 Video Chat
               </div>
@@ -115,7 +115,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="scale-75 xl:scale-95">
+          <div className="">
             <div className="absolute top-[170px] right-0 w-full text-right">
               <div className="flex flex-col justify-end items-end relative">
                 <div className="relative w-full h-full ">

@@ -13,7 +13,7 @@ const PrivacyAppBar = (props: Props) => {
     <div className="z-20 bg-white fixed flex flex-row justify-between items-center w-screen ">
       <div className="w-full max-w-[1400px] mx-auto p-6 relative">
         <div className="font-bold text-2xl">Privacy Center</div>
-        <div className="gap-4 absolute w-full top-0 font-bold text-2xl p-4 flex justify-center items-center"
+        <div className="gap-4 absolute w-full top-0 font-bold text-2xl p-4 flex justify-center items-center cursor-pointer"
           onClick={() => router.push('/')}>
           <Image
             src={"/logo.png"}

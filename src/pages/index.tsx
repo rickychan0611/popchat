@@ -15,10 +15,10 @@ const Home = () => {
   const [openQR, setOpenQR] = useState(false)
 
   return (
-    <div className="bg-white min-h-screen font-[poppins]">
+    <div className="bg-white min-h-screen w-auto font-[poppins] overflow-auto">
       <ContactModal open={openContact} setOpen={setOpenContact} type={0} />
 
-      <div className="w-screen min-w-[800px] max-w-[1380px] mx-auto relative overflow-auto">
+      <div className="w-screen min-w-[800px] max-w-[1380px] mx-auto relative ">
         {/* app bar */}
         <div className="absolute top-6 flex flex-row justify-between items-center w-screen max-w-[1380px] mx-auto px-16 z-10">
           <div className="flex flex-row gap-5">
@@ -118,7 +118,7 @@ const Home = () => {
                     <ResponsiveImage src={"/google_play.png"} />
                   </div>
                 </a>
-                
+
                 <div className="relative w-[180px] h-full cursor-pointer flex-1"
                   onClick={() => {
                     setOpenQR(!openQR)

@@ -4,10 +4,10 @@ type Props = {};
 
 const FAQPrivacyCenter = (props: Props) => {
   return (
-    <div className="pt-[240px] bg-white min-h-screen font-[poppins]">
+    <div className="pt-[290px] bg-white min-h-screen font-[poppins]">
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
-          <h1 className="text-3xl font-bold text-center mb-6">FAQs - Privacy Center</h1>
+          <h1 className="text-3xl font-bold text-center mb-6">FAQ - Privacy Center</h1>
 
           <section className="mb-8">
             <h3 className="mb-4">Why do we need your personal information?</h3>

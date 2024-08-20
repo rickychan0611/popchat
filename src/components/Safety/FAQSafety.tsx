@@ -4,7 +4,7 @@ type Props = {};
 
 const FAQSafety = (props: Props) => {
   return (
-    <div className="pt-[240px] bg-white min-h-screen font-[poppins]">
+    <div className="pt-[290px] bg-white min-h-screen font-[poppins]">
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
           <h1 className="text-3xl font-bold text-center mb-6">FAQ - Safety & Privacy</h1>

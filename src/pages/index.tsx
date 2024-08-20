@@ -1,16 +1,23 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { Android_Download } from "@/constants/constant";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
+import moment from "moment";
+import ContactModal from "@/components/ContactModal";
+import H5QRCode from "@/components/H5QRCode";
 
 type Props = {};
 
 const Home = () => {
   const router = useRouter();
+  const [openContact, setOpenContact] = useState(false)
+  const [openQR, setOpenQR] = useState(false)
 
   return (
     <div className="bg-white min-h-screen font-[poppins]">
+      <ContactModal open={openContact} setOpen={setOpenContact} type={0} />
+
       <div className="w-screen min-w-[800px] max-w-[1380px] mx-auto relative overflow-auto">
         {/* app bar */}
         <div className="absolute top-6 flex flex-row justify-between items-center w-screen max-w-[1380px] mx-auto px-16 z-10">
@@ -60,9 +67,12 @@ const Home = () => {
               />
             </a>
 
-            <div className="cursor-pointer ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full px-6">
-              Community
-            </div>
+            <a href="/safety-center/guidelines" target="_blank">
+              <div className="cursor-pointer ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full px-6"
+              >
+                Community
+              </div>
+            </a>
           </div>
         </div>
 
@@ -102,13 +112,24 @@ const Home = () => {
                 >
                   <ResponsiveImage src={"/download.png"} />
                 </div>
-                <div className="relative w-[180px] h-full cursor-pointer flex-1">
-                  <ResponsiveImage src={"/google_play.png"} />
-                </div>
+
+                <a href="https://play.google.com/" target="_blank">
+                  <div className="relative w-[180px] h-full cursor-pointer flex-1">
+                    <ResponsiveImage src={"/google_play.png"} />
+                  </div>
+                </a>
+                
                 <div className="relative w-[180px] h-full cursor-pointer flex-1"
                   onClick={() => {
-                    router.push("https://aime-h5-test.web.app/");
+                    setOpenQR(!openQR)
                   }}>
+                  {openQR &&
+                    <div className=" cursor-pointer absolute top-[-190px] right-0 bg-white z-50 p-4 rounded-lg border shadow"
+                      onClick={() => setOpenQR(false)}
+                    >
+                      <H5QRCode />
+                    </div>
+                  }
                   <ResponsiveImage src={"/apple.png"} />
                 </div>
               </div>
@@ -144,43 +165,43 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          <div className="absolute top-[300px] right-0">
-            <Image
-              src="/chatbox1.png"
-              width={260}
-              height={1}
-              alt="frame"
-              className="object-fit"
-            />
+            <div className="absolute top-[300px] right-0">
+              <Image
+                src="/chatbox1.png"
+                width={260}
+                height={1}
+                alt="frame"
+                className="object-fit"
+              />
+            </div>
+            <div className="absolute top-[520px] right-[420px]">
+              <Image
+                src="/chatbox.png"
+                width={280}
+                height={1}
+                alt="frame"
+                className="object-fit"
+              />
+            </div>
+            <div className="absolute top-[650px] right-[150px]">
+              <Image
+                src="/hearts.png"
+                width={290}
+                height={1}
+                alt="frame"
+                className="object-fit"
+              />
+            </div>
+            <div className="absolute top-[850px] right-[105px]">
+              <Image
+                src="/shadow.png"
+                width={400}
+                height={100}
+                alt="frame"
+                className="object-fit"
+              />
+            </div>
           </div>
-          <div className="absolute top-[520px] right-[420px]">
-            <Image
-              src="/chatbox.png"
-              width={280}
-              height={1}
-              alt="frame"
-              className="object-fit"
-            />
-          </div>
-          <div className="absolute top-[650px] right-[150px]">
-            <Image
-              src="/hearts.png"
-              width={290}
-              height={1}
-              alt="frame"
-              className="object-fit"
-            />
-          </div>
-          <div className="absolute top-[850px] right-[105px]">
-            <Image
-              src="/shadow.png"
-              width={400}
-              height={100}
-              alt="frame"
-              className="object-fit"
-            />
-          </div>
-        </div>
         </div>
 
         {/* 2nd section */}
@@ -288,18 +309,28 @@ const Home = () => {
 
       <div className="bg-[#09042F] w-full flex flex-col justify-center items-center pt-[50px] text-white">
         <div className="flex flex-row gap-[100px]">
-          <div className=" cursor-pointer">Contact</div>
-          <div className=" cursor-pointer">Terms of Use</div>
-          <div className=" cursor-pointer">Privacy</div>
-          <div className=" cursor-pointer">Safety Center</div>
+          <div className=" cursor-pointer"
+            onClick={() => setOpenContact(true)}>Contact</div>
+
+          <a href="/terms-of-use" target="_blank">
+            <div className=" cursor-pointer" >Terms of Service</div>
+          </a>
+
+          <a href="/privacy-center/privacy-policy" target="_blank">
+            <div className=" cursor-pointer" >Privacy</div>
+          </a>
+
+          <a href="/safety-center/tips" target="_blank">
+            <div className=" cursor-pointer" >Safety Center</div>
+          </a>
         </div>
 
         <div className="text-[12px] text-center my-8">
-          <div>@ Copyright PopChat 2023</div>
+          <div>@ Copyright PopChat {moment().format("YYYY")}</div>
           <div>609 West Hastings，Vancouver, BC, Canada V6B 4W4</div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

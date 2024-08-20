@@ -6,14 +6,14 @@ import React from "react";
 
 type Props = {};
 
-const SafetyAppBar = (props: Props) => {
+const PrivacyAppBar = (props: Props) => {
   const router = useRouter();
   const [open, setOpen] = React.useState(false);
   return (
     <div className="z-20 bg-white fixed flex flex-row justify-between items-center w-screen ">
       <div className="w-full max-w-[1400px] mx-auto p-6 relative">
-        <div className="font-bold text-2xl">Safety Center</div>
-        <div className="gap-4 absolute w-full top-0 font-bold text-2xl p-4 flex justify-center items-center cursor-pointer"
+        <div className="font-bold text-2xl">Privacy Center</div>
+        <div className="gap-4 absolute w-full top-0 font-bold text-2xl p-4 flex justify-center items-center"
           onClick={() => router.push('/')}>
           <Image
             src={"/logo.png"}
@@ -35,4 +35,4 @@ const SafetyAppBar = (props: Props) => {
   );
 };
 
-export default SafetyAppBar;
+export default PrivacyAppBar;

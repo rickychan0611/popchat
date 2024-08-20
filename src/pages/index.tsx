@@ -15,12 +15,12 @@ const Home = () => {
   const [openQR, setOpenQR] = useState(false)
 
   return (
-    <div className="bg-white min-h-screen w-auto font-[poppins] overflow-auto">
+    <div className="bg-white min-h-screen w-auto font-[poppins] ">
       <ContactModal open={openContact} setOpen={setOpenContact} type={0} />
 
-      <div className="w-screen min-w-[800px] max-w-[1380px] mx-auto relative ">
+      <div className="min-w-[1200px] max-w-[1380px] mx-auto relative">
         {/* app bar */}
-        <div className="absolute top-6 flex flex-row justify-between items-center w-screen max-w-[1380px] mx-auto px-16 z-10">
+        <div className="min-w-[1200px] max-w-[1380px] mx-auto absolute top-6 flex flex-row justify-between items-center px-16 z-10">
           <div className="flex flex-row gap-5">
             <Image
               src={"/logo.png"}
@@ -76,7 +76,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full relative bg-red-200">
+        <div className="w-full relative h-[900px]">
           {/* background image */}
           <div className="absolute top-0 w-[980px] h-[900px]">
             <div className="relative mt-6 w-full h-full">
@@ -205,15 +205,15 @@ const Home = () => {
         </div>
 
         {/* 2nd section */}
-        <div className="pt-[calc(100vh+50px)] right-0 w-full flex flex-col items-center relative">
+        <div className="mt-[100px] right-0 w-full flex flex-col items-center relative">
           {/* background decor */}
-          <div className="absolute top-[1100px] left-[100px] flex justify-start items-start w-full">
+          <div className="absolute top-0 left-[100px] flex justify-start items-start w-full">
             <Image src={"/shoes.png"} width={89} height={1} alt="line" />
           </div>
-          <div className="absolute top-[1180px] right-0 flex justify-start items-start">
+          <div className="absolute top-[160px] right-0 flex justify-start items-start">
             <Image src={"/ball2.png"} width={89} height={1} alt="line" />
           </div>
-          <div className="absolute top-[1900px] flex justify-start items-start w-full">
+          <div className="absolute top-[800px] flex justify-start items-start w-full">
             <Image src={"/ball1.png"} width={752} height={1} alt="line" />
           </div>
 

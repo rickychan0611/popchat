@@ -51,7 +51,9 @@ const FAQPrivacyCenter = (props: Props) => {
             </p>
             <h4 className="font-bold mb-2">Facebook and Google login</h4>
             <p className="mb-4">
-              If you believe someone has gained access with your Facebook or Google account, we recommend you update your Facebook and Google passwords immediately or visit Facebook's Help Centre or Google's Account Help for direct support.
+              If you believe someone has gained access with your Facebook or Google account, we recommend you update your Facebook and Google passwords immediately or visit 
+              <a href="https://www.facebook.com/help/hacked">Facebook's Help Centre</a> or 
+              <a href="https://support.google.com/accounts/answer/6294825?hl=en">Google's Account Help</a> for direct support.
             </p>
             <h4 className="font-bold mb-2">Contact Us</h4>
             <p className="mb-4">
@@ -82,7 +84,7 @@ const FAQPrivacyCenter = (props: Props) => {
           <section className="mb-8">
             <h3 className="mb-4">How do I contact the DPO?</h3>
             <p className="mb-4">
-              To submit a request to the Data Protection Officer, you can contact us via email: support@popchat.live
+              To submit a request to the Data Protection Officer, you can contact us via email: <a href="mailto:support@popchat.live">support@popchat.live</a>
             </p>
           </section>
 
@@ -92,7 +94,7 @@ const FAQPrivacyCenter = (props: Props) => {
               If you would like to delete your profile, you can do it within the App itself. You can click on Settings &gt; select the option "Delete Account."
             </p>
             <p className="mb-4">
-              You also have the right to request for your data to be erased by submitting an email to the following address: support@popchat.live
+              You also have the right to request for your data to be erased by submitting an email to the following address: <a href="mailto:support@popchat.live">support@popchat.live</a>
             </p>
           </section>
 

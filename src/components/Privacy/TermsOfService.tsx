@@ -7,9 +7,9 @@ const TermsOfService = (props: Props) => {
     <div className="pt-[240px] bg-white min-h-screen font-[poppins]">
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
-          <h1 className="text-3xl font-bold text-center mb-6">
-            Terms of Service
-          </h1>
+          <h2 className="">
+          Non-binding summary of ToS
+          </h2>
 
           <p>
             This is an overview of some of the important rights and obligations
@@ -1013,7 +1013,7 @@ const TermsOfService = (props: Props) => {
               the associated services will be automatically terminated. If you
               encounter any issues or need assistance, please contact our
               customer service team at{" "}
-              <a href="mailto:support@popchat.live">support@popchat.live</a>.
+              <a href="mailto:support@popchat.live" className="text-blue-500">support@popchat.live</a>.
             </p>
           </ul>
         </div>

@@ -164,8 +164,7 @@ const SafetyTips = (props: Props) => {
                   myself I already sent?
                 <ul>
                   <li>
-                    Report it to our Trust and Safety Team <a href="#">here</a>{" "}
-                    immediately
+                    Report it to our Trust and Safety Team immediately
                   </li>
                   <li>Block the user</li>
                   <li>Report this to local law enforcement</li>

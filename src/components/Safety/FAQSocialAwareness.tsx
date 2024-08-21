@@ -33,9 +33,9 @@ const FAQSocialAwareness = (props: Props) => {
             <p className="mb-4">
               Useful references:
               <ul className="list-disc list-inside ml-6">
-                <li>Women’s Aid</li>
-                <li>Women Against Abuse</li>
-                <li>European Women’s Helpline Directory</li>
+                <li><a href="https://www.womensaid.org.uk/">Women’s Aid</a></li>
+                <li><a href="https://www.womenagainstabuse.org/">Women Against Abuse</a></li>
+                <li><a href="https://ec.europa.eu/justice/saynostopvaw/helpline.html">European Women’s Helpline Directory</a></li>
               </ul>
             </p>
           </section>

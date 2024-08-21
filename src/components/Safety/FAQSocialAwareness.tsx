@@ -61,8 +61,8 @@ const FAQSocialAwareness = (props: Props) => {
             <p className="mb-4">
               Useful websites:
               <ul className="list-disc list-inside ml-6">
-                <li>Child Net International</li>
-                <li>Internet Watch Foundation</li>
+                <a href="https://www.childnet.com/" target={"_blank"}><li className="underline text-blue-500">Child Net International</li></a>
+                <a href="https://www.iwf.org.uk/" target={"_blank"}><li className="underline text-blue-500">Internet Watch Foundation</li></a>
               </ul>
             </p>
           </section>
@@ -88,12 +88,12 @@ const FAQSocialAwareness = (props: Props) => {
             <p className="mb-4">
               Useful websites:
               <ul className="list-disc list-inside ml-6">
-                <li>ConnectSafely</li>
-                <li>Get Cyber Safe</li>
-                <li>Get Safe Online</li>
-                <li>Internet Matters</li>
-                <li>Netsafe</li>
-                <li>Office of the eSafety Commissioner</li>
+              <a href="https://www.connectsafely.org/" target={"_blank"}><li className="underline text-blue-500">ConnectSafely</li></a>
+              <a href="https://www.getcybersafe.gc.ca/index-eng.aspx" target={"_blank"}><li className="underline text-blue-500">Get Cyber Safe</li></a>
+              <a href="https://www.getsafeonline.org/privacy-policy/" target={"_blank"}><li className="underline text-blue-500">Get Safe Online</li></a>
+              <a href="https://www.internetmatters.org/" target={"_blank"}><li className="underline text-blue-500">Internet Matters</li></a>
+              <a href="https://www.netsafe.org.nz/" target={"_blank"}><li className="underline text-blue-500">Netsafe</li></a>
+              <a href="https://www.esafety.gov.au/" target={"_blank"}><li className="underline text-blue-500">Office of the eSafety Commissioner</li></a>
               </ul>
             </p>
           </section>
@@ -126,8 +126,8 @@ const FAQSocialAwareness = (props: Props) => {
             <p className="mb-4">
               Useful links:
               <ul className="list-disc list-inside ml-6">
-                <li>Mind | Mental Health Organisation</li>
-                <li>Young Minds | Useful Tips</li>
+              <a href="https://www.mind.org.hk/" target={"_blank"}><li className="underline text-blue-500">Mind | Mental Health Organisation</li></a>
+              <a href="https://youngminds.org.uk/" target={"_blank"}><li className="underline text-blue-500">Young Minds | Useful Tips</li></a>
               </ul>
             </p>
           </section>

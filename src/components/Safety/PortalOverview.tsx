@@ -7,10 +7,7 @@ const PortalOverview = (props: Props) => {
     <div className="pt-[290px] bg-white min-h-screen font-[poppins]">
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
-          <h1 className="text-3xl font-bold text-center mb-6">
-            Law Enforcement Portal Overview
-          </h1>
-
+         
           <section className="mb-8">
             <h3 className="mb-4">Introduction</h3>
             <p className="mb-4">
@@ -232,7 +229,7 @@ const PortalOverview = (props: Props) => {
             </p>
           </section>
 
-          <section className="mb-8">
+          <section className="mb-20">
             <h3 className="mb-4">Update</h3>
             <p className="mb-4">
               The latest version is updated on August 1, 2024.

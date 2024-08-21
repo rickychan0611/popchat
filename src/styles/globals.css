@@ -29,11 +29,15 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /* Style for the outer ul */
@@ -66,4 +70,5 @@ ul ul {
 
 p {
   font-size: 20px;
+  margin-bottom: 10px;
 }

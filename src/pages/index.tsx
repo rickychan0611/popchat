@@ -326,7 +326,7 @@ const Home = () => {
           <div className=" cursor-pointer"
             onClick={() => setOpenContact(true)}>Contact</div>
 
-          <a href="/terms-of-use" target="_blank">
+          <a href="/privacy-center/terms" target="_blank">
             <div className=" cursor-pointer" >Terms of Service</div>
           </a>
 

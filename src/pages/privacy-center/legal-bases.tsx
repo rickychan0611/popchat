@@ -19,7 +19,7 @@ const LegalBasesIndex = (props: Props) => {
           <div className="flex flex-row justify-between items-center gap-12">
             <div
               className=" cursor-pointer flex items-center flex-col"
-              onClick={() => router.push("/safety-center/tips")}
+              onClick={() => router.push("/privacy-center/terms")}
             >
               Terms of Serivce
               <div className="w-10 h-1 mt-4 "></div>

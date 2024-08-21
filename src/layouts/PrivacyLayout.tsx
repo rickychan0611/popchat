@@ -10,9 +10,7 @@ const PrivacyLayout: React.FC<{ children: any }> = ({ children }) => {
   return (
     <div className="bg-white">
       <PrivacyAppBar />
-      {/* <Container> */}
       {children}
-      {/* </Container> */}
       <PopChatFooter />
     </div>
   )

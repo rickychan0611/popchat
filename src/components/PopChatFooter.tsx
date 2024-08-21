@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import ContactModal from "./ContactModal";
 import H5QRCode from "./H5QRCode";
+import DownloadQRCode from "./DownloadQRCode";
 
 type Props = {};
 
@@ -13,6 +14,7 @@ const PopChatFooter = (props: Props) => {
   const [openContact, setOpenContact] = useState(false);
   const [openAffiliate, setOpenAffiliate] = useState(false);
   const [openQR, setOpenQR] = useState(false)
+  const [openDownloadQR, setOpenDownloadQR] = useState(false)
 
   function sendEmail() {
     const recipient = "digipalca@gmail.com";
@@ -46,16 +48,28 @@ const PopChatFooter = (props: Props) => {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex flex-row gap-4 items-center justify-end flex-1">
-                <Image
-                  src={"/footer-download.png"}
-                  width={190}
-                  height={56}
-                  alt="logo"
-                  className="object-contain cursor-pointer"
-                  onClick={() => {
-                    router.push(Android_Download);
-                  }}
-                />
+
+                <div className="relative">
+                  {openDownloadQR &&
+                    <div className=" cursor-pointer absolute top-[-200px] right-1 bg-white z-50 p-4 rounded-lg border shadow"
+                      onClick={() => setOpenDownloadQR(false)}
+                    >
+                      <DownloadQRCode />
+                    </div>
+                  }
+                  <Image
+                    src={"/footer-download.png"}
+                    width={190}
+                    height={56}
+                    alt="logo"
+                    className="object-contain cursor-pointer"
+                    onClick={() => {
+                      setOpenDownloadQR(!openDownloadQR)
+                      setOpenQR(false)
+                    }}
+                  />
+                </div>
+
                 <a href="https://play.google.com/" target="_blank">
                   <Image
                     src={"/footer-android.png"}
@@ -67,7 +81,7 @@ const PopChatFooter = (props: Props) => {
                 </a>
                 <div className="relative">
                   {openQR &&
-                    <div className=" cursor-pointer absolute top-[-200px] right-0 bg-white z-50 p-4 rounded-lg border shadow"
+                    <div className=" cursor-pointer absolute top-[-200px] right-1 bg-white z-50 p-4 rounded-lg border shadow"
                       onClick={() => setOpenQR(false)}
                     >
                       <H5QRCode />
@@ -79,7 +93,10 @@ const PopChatFooter = (props: Props) => {
                     height={56}
                     alt="logo"
                     className="object-contain cursor-pointer"
-                    onClick={() => setOpenQR(!openQR)}
+                    onClick={() => {
+                      setOpenDownloadQR(false)
+                      setOpenQR(!openQR)
+                    }}
                   />
                 </div>
               </div>

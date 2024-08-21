@@ -1,11 +1,12 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
-import { Android_Download } from "@/constants/constant";
+import { Android_Download, Streamy_Download } from "@/constants/constant";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import moment from "moment";
 import ContactModal from "@/components/ContactModal";
 import H5QRCode from "@/components/H5QRCode";
+import DownloadQRCode from "@/components/DownloadQRCode";
 
 type Props = {};
 
@@ -13,6 +14,7 @@ const Home = () => {
   const router = useRouter();
   const [openContact, setOpenContact] = useState(false)
   const [openQR, setOpenQR] = useState(false)
+  const [openDownloadQR, setOpenDownloadQR] = useState(false)
 
   return (
     <div className="bg-white min-h-screen w-auto font-[poppins] ">
@@ -20,8 +22,9 @@ const Home = () => {
 
       <div className="min-w-[1200px] max-w-[1380px] mx-auto relative">
         {/* app bar */}
-        <div className="min-w-[1200px] max-w-[1380px] mx-auto absolute top-6 flex flex-row justify-between items-center px-16 z-10">
-          <div className="flex flex-row gap-5">
+        <div className="min-w-[1200px] max-w-[1380px] mx-auto absolute top-6 flex flex-row justify-between items-center px-16 z-50">
+          <div className="flex flex-row gap-5 cursor-pointer "
+          style={{zIndex:1000}}>
             <Image
               src={"/logo.png"}
               width={77}
@@ -91,7 +94,7 @@ const Home = () => {
           </div>
 
           {/* center text */}
-          <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6 z-50">
+          <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6 ">
             <div className="flex flex-col justify-center items-center h-[900px] px-10">
               <div className="font-[Poppins] font-[900] text-[62px]">
                 1-on-1 Video Chat
@@ -107,10 +110,20 @@ const Home = () => {
                 <div
                   className="relative w-[180px] h-full cursor-pointer"
                   onClick={() => {
-                    router.push(Android_Download);
+                    setOpenDownloadQR(!openDownloadQR)
+                    setOpenQR(false)
                   }}
                 >
-                  <ResponsiveImage src={"/download.png"} />
+                  <div className="relative">
+                    {openDownloadQR &&
+                      <div className=" cursor-pointer absolute top-[-190px] right-0 bg-white z-50 p-4 rounded-lg border shadow"
+                        onClick={() => {setOpenDownloadQR(false)}}
+                      >
+                        <DownloadQRCode />
+                      </div>
+                    }
+                    <ResponsiveImage src={"/download.png"} />
+                  </div>
                 </div>
 
                 <a href="https://play.google.com/" target="_blank">
@@ -122,6 +135,7 @@ const Home = () => {
                 <div className="relative w-[180px] h-full cursor-pointer flex-1"
                   onClick={() => {
                     setOpenQR(!openQR)
+                    setOpenDownloadQR(false)
                   }}>
                   {openQR &&
                     <div className=" cursor-pointer absolute top-[-190px] right-0 bg-white z-50 p-4 rounded-lg border shadow"
@@ -307,8 +321,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#09042F] w-full flex flex-col justify-center items-center pt-[50px] text-white">
-        <div className="flex flex-row gap-[100px]">
+      <div className="bg-[#09042F] w-full flex flex-col justify-center items-center pt-[40px] text-white">
+        <div className="flex flex-row gap-[100px] items-center">
           <div className=" cursor-pointer"
             onClick={() => setOpenContact(true)}>Contact</div>
 
@@ -322,6 +336,13 @@ const Home = () => {
 
           <a href="/safety-center/tips" target="_blank">
             <div className=" cursor-pointer" >Safety Center</div>
+          </a>
+
+          <a href={Streamy_Download} target="_blank">
+            <div className=" cursor-pointer bg-white text-black py-1 px-6 rounded-full flex flex-col justify-center items-center" >
+              <div className="">Download</div>
+              <div className="text-[14px] mt-[-4px]">Streamy Assistant</div>
+            </div>
           </a>
         </div>
 

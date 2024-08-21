@@ -9,9 +9,7 @@ const DefaultLayout: React.FC<{ children: any }> = ({ children }) => {
   return (
     <div className="bg-white">
       <SafetyAppBar />
-      {/* <Container> */}
       {children}
-      {/* </Container> */}
       <PopChatFooter />
     </div>
   )

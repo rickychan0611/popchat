@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -38,10 +39,10 @@ const SubmitReport = (props: Props) => {
           </ol>
 
           <div className="flex flex-row flex-wrap gap-4 justify-center items-center mt-10 mb-20">
-            <img src="/report1.png" className="object-contain"/>
-            <img src="/report2.png" className="object-contain"/>
-            <img src="/report3.png" className="object-contain"/>
-            <img src="/report4.png" className="object-contain"/>
+            <Image src="/report1.png" className="object-contain" alt="" width={220} height={1}/>
+            <Image src="/report2.png" className="object-contain" alt="" width={220} height={1}/>
+            <Image src="/report3.png" className="object-contain" alt="" width={220} height={1}/>
+            <Image src="/report4.png" className="object-contain" alt="" width={220} height={1}/>
           </div>
         </div>
       </div>

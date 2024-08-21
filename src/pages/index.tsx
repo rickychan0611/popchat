@@ -70,8 +70,8 @@ const Home = () => {
               />
             </a>
 
-            <a href="/safety-center/guidelines" target="_blank">
-              <div className="cursor-pointer ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full px-6"
+            <a href="/safety-center/guidelines" target="_blank" className="text-black no-underline">
+              <div className="cursor-pointer ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full py-1 px-6"
               >
                 Community
               </div>
@@ -326,19 +326,19 @@ const Home = () => {
           <div className=" cursor-pointer"
             onClick={() => setOpenContact(true)}>Contact</div>
 
-          <a href="/privacy-center/terms" target="_blank">
+          <a href="/privacy-center/terms" target="_blank" className="text-white no-underline">
             <div className=" cursor-pointer" >Terms of Service</div>
           </a>
 
-          <a href="/privacy-center/privacy-policy" target="_blank">
+          <a href="/privacy-center/privacy-policy" target="_blank" className="text-white no-underline">
             <div className=" cursor-pointer" >Privacy</div>
           </a>
 
-          <a href="/safety-center/tips" target="_blank">
+          <a href="/safety-center/tips" target="_blank" className="text-white no-underline">
             <div className=" cursor-pointer" >Safety Center</div>
           </a>
 
-          <a href={Streamy_Download} target="_blank">
+          <a href={Streamy_Download} target="_blank" className="text-white no-underline">
             <div className=" cursor-pointer bg-white text-black py-1 px-6 rounded-full flex flex-col justify-center items-center" >
               <div className="">Download</div>
               <div className="text-[14px] mt-[-4px]">Streamy Assistant</div>

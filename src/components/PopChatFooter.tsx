@@ -44,7 +44,7 @@ const PopChatFooter = (props: Props) => {
                   className="object-contain"
                 />
               </div>
-              <div className="text-white">Copyright AI Me @{moment().format("YYYY")}</div>
+              <div className="text-white">Copyright PopChat @{moment().format("YYYY")}</div>
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex flex-row gap-4 items-center justify-end flex-1">

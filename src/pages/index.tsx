@@ -24,7 +24,7 @@ const Home = () => {
         {/* app bar */}
         <div className="min-w-[1200px] max-w-[1380px] mx-auto absolute top-6 flex flex-row justify-between items-center px-16 z-50">
           <div className="flex flex-row gap-5 cursor-pointer "
-          style={{zIndex:1000}}>
+            style={{ zIndex: 1000 }}>
             <Image
               src={"/logo.png"}
               width={77}
@@ -96,12 +96,14 @@ const Home = () => {
           {/* center text */}
           <div className="absolute w-[62%] max-w-[880px] text-white  text-center 1200 mt-6 ">
             <div className="flex flex-col justify-center items-center h-[900px] px-10">
-              <div className="font-[Poppins] font-[900] text-[62px]">
+              <div className="font-[Poppins] font-[900] text-[60px]">
                 1-on-1 Video Chat
               </div>
-              <div className="font-[Poppins] font-[500] text-[30px] mt-6 mb-4 px-[100px]">
-                Instant AI Translation: Speak Your Language, Hear Theirs
-                Translated
+              <div className="font-[Poppins] text-[30px] mt-2  marker:px-[100px]">
+                Instant AI Translation
+              </div>
+              <div className="font-[Poppins]  text-[20px] mt-1 mb-4 px-[100px]">
+                Speak Your Language, Hear Theirs in Yours
               </div>
               <div className="relative w-[180px] cursor-pointer">
                 <ResponsiveImage src={"/1on1.png"} />
@@ -117,7 +119,7 @@ const Home = () => {
                   <div className="relative">
                     {openDownloadQR &&
                       <div className=" cursor-pointer absolute top-[-190px] right-0 bg-white z-50 p-4 rounded-lg border shadow"
-                        onClick={() => {setOpenDownloadQR(false)}}
+                        onClick={() => { setOpenDownloadQR(false) }}
                       >
                         <DownloadQRCode />
                       </div>

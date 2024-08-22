@@ -153,7 +153,7 @@ const Home = () => {
           </div>
 
           <div className="">
-            <div className="absolute top-[170px] right-0 w-full text-right">
+            <div className="absolute top-[160px] right-0 w-full text-right">
               <div className="flex flex-col justify-end items-end relative">
                 <div className="relative w-full h-full ">
                   <div className="absolute top-0 right-32">
@@ -181,16 +181,16 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-[300px] right-0">
+            <div className="absolute top-[580px] right-10 shadow">
               <Image
                 src="/chatbox1.png"
-                width={260}
+                width={200}
                 height={1}
                 alt="frame"
                 className="object-fit"
               />
             </div>
-            <div className="absolute top-[520px] right-[420px]">
+            <div className="absolute top-[500px] right-[390px]">
               <Image
                 src="/chatbox.png"
                 width={280}
@@ -199,7 +199,7 @@ const Home = () => {
                 className="object-fit"
               />
             </div>
-            <div className="absolute top-[650px] right-[150px]">
+            <div className="absolute top-[640px] right-[150px]">
               <Image
                 src="/hearts.png"
                 width={290}
@@ -223,7 +223,7 @@ const Home = () => {
         {/* 2nd section */}
         <div className="mt-[100px] right-0 w-full flex flex-col items-center relative">
           {/* background decor */}
-          <div className="absolute top-0 left-[100px] flex justify-start items-start w-full">
+          <div className="absolute top-0 left-[100px] flex justify-start items-start ">
             <Image src={"/shoes.png"} width={89} height={1} alt="line" />
           </div>
           <div className="absolute top-[160px] right-0 flex justify-start items-start">

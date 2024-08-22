@@ -7,7 +7,7 @@ const PortalOverview = (props: Props) => {
     <div className="pt-[290px] bg-white min-h-screen font-[poppins]">
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
-         
+
           <section className="mb-8">
             <h3 className="mb-4">Introduction</h3>
             <p className="mb-4">
@@ -36,7 +36,7 @@ const PortalOverview = (props: Props) => {
             <h3 className="mb-4">Submission of Requests</h3>
             <p className="mb-4">
               Law Enforcement officials may use the following delivery method
-              for the submission of requests to email: support@popchat.live
+              for the submission of requests to email:  <a href="mailto:support@popchat.live">support@popchat.live</a>
             </p>
             <p className="mb-4">
               Further details please refer to the submission guideline.

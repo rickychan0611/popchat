@@ -134,13 +134,13 @@ const SafetyTips = (props: Props) => {
                 Examples of NGOs who are specialized in supporting women's
                 online safety:
                 <ul>
-                  <li>Global</li>
-                  <li>Europe1</li>
-                  <li>Europe2</li>
-                  <li>Europe3</li>
-                  <li>South Asia</li>
-                  <li>Latin America1</li>
-                  <li>Latin America2</li>
+                  <li><a href="https://withoutmyconsent.org/" target="_blank">Global</a></li>
+                  <li><a href="https://www.womensaid.ie/" target="_blank">urope1</a></li>
+                  <li><a href="https://revengepornhelpline.org.uk/" target="_blank">Europe2</a></li>
+                  <li><a href="https://www.helpwanted.nl/" target="_blank">Europe3</a></li>
+                  <li><a href="https://www.csrindia.org/" target="_blank">South Asia</a></li>
+                  <li><a href="https://www.csrindia.org/" target="_blank">Latin America1</a></li>
+                  <li><a href="https://www.csrindia.org/" target="_blank">Latin America2</a></li>
                 </ul>
               </li>
             </ol>

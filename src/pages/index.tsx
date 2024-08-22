@@ -165,7 +165,7 @@ const Home = () => {
                         loop
                         playsInline
                         className="w-full h-[1000px] object-cover rounded-[50px] "
-                        src="/1on1.mov"
+                        src="/popchat.mp4"
                       />
                     </div>
                   </div>

@@ -43,17 +43,15 @@ const Community = (props: Props) => {
                 verification processes, ensuring no underage user accesses our
                 services.
               </li>
-              <li>
-                <span className="font-bold">Safety Measures:</span> Our
-                commitment to safety is unwavering, especially concerning minors
-                and vulnerable groups. We actively prevent and remove content
-                that could be harmful or dangerous.
-              </li>
             </ul>
           </section>
+          <h3 >Safety Measures</h3>
+          <p>Our commitment to safety is unwavering, especially concerning minors
+            and vulnerable groups. We actively prevent and remove content
+            that could be harmful or dangerous.
+          </p>
 
           <section className="mb-8">
-            <h3 className="font-bold mb-2">Content Restrictions</h3>
             <ul className="list-disc list-inside space-y-2">
               <li>
                 <span className="font-bold">
@@ -70,6 +68,11 @@ const Community = (props: Props) => {
                 Affiliations with hate groups, terrorist organizations, or any
                 group that promotes violent behaviors are not allowed.
               </li>
+            </ul>
+          </section>
+          <section className="mb-8">
+            <h3 className="font-bold mb-2">Content Restrictions</h3>
+            <ul>
               <li>
                 <span className="font-bold">Adult Content:</span> We do not
                 tolerate nudity, sexual activities, or sexually explicit

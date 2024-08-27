@@ -467,7 +467,7 @@ const Home = () => {
           className=" cursor-pointer"
         />
         <div className="text-[20px] my-16 text-center px-4">
-          Step into the future of live streaming with AI Me, the premier
+          Step into the future of live streaming with PopChat , the premier
           AI-enhanced live streaming platform.
         </div>
 

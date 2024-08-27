@@ -6,7 +6,7 @@ const AddToHomeScreen = () => {
     <div className="bg-black min-h-screen pb-12 pt-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">How to AI ME to Your iOS Home Screen</h2>
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">How to PopChat to Your iOS Home Screen</h2>
           <p className="mt-4 text-lg text-gray-400">Follow these simple 3 steps to add our website to your iPhone or iPad home screen.</p>
         </div>
 
@@ -50,7 +50,7 @@ const AddToHomeScreen = () => {
           {/* Step 4 */}
           <div className="bg-white overflow-hidden shadow rounded-lg p-6">
             <h3 className="text-xl font-semibold text-gray-900">Done!</h3>
-            <p className="mt-2 text-gray-600">Now you can find the AI ME on your home screen!</p>
+            <p className="mt-2 text-gray-600">Now you can find the PopChat on your home screen!</p>
             <div className="mt-4 flex justify-center relative">
               <ResponsiveImage src="/s4.jpg" />
             </div>

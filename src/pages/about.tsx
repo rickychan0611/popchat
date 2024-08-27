@@ -8,7 +8,7 @@ const About = () => {
 
       <h3>Overview:</h3>
       <p>
-        AI Me is an online platform dedicated to providing one-on-one private
+        PopChat is an online platform dedicated to providing one-on-one private
         live streaming experiences. We offer a unique streaming service model
         that creates a space for users to freely express themselves and engage
         in meaningful interactions. Our platform features include one-on-one
@@ -32,7 +32,7 @@ const About = () => {
           programs, ensuring every viewer enjoys a collective experience of joy.
         </li>
         <li>
-          <b>Fan Interaction: </b> AI Me values the direct and stable connection
+          <b>Fan Interaction: </b> PopChat values the direct and stable connection
           between hosts and their fans. The platform encourages hosts to build
           and maintain their fanbase through private rooms and exclusive
           content, fostering deeper connections.
@@ -47,7 +47,7 @@ const About = () => {
 
       <h3>Our Commitment: </h3>
       <p>
-        AI Me is committed to providing a safe, mature, and respectful
+        PopChat is committed to providing a safe, mature, and respectful
         environment for all users. Our platform strictly adheres to legal
         regulations, ensuring that all participants are 18 +. We respect and
         protect user privacy, striving to create a stress-free and respectful
@@ -57,10 +57,10 @@ const About = () => {
 
       <h3>Future Outlook: </h3>
       <p>
-        As an emerging live streaming platform, AI Me is dedicated to continuous
+        As an emerging live streaming platform, PopChat is dedicated to continuous
         innovation and improvement, aiming to become a leading provider of
         one-on-one live streaming services in the industry. We look forward to
-        continually striving to make AI Me the preferred platform for connecting
+        continually striving to make PopChat the preferred platform for connecting
         hosts and viewers.
       </p>
       <br />

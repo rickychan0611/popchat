@@ -10,7 +10,7 @@ const privacyPolicy = () => {
         <a href="http://www..aimeai.live">http://www..aimeai.live</a> (referred to in this document as "the Website"). This
         Privacy Policy outlines how
         Digipal
-        Tech Inc. and its affiliates, (referred to in this document as "AI Me," "the Company," "we," or "our") collect and
+        Tech Inc. and its affiliates, (referred to in this document as "PopChat ," "the Company," "we," or "our") collect and
         process information from users depending on their interaction with the Website, including visitors, who are people
         visiting the website; members, who are individuals who create an account and register as members on the Website;
         and
@@ -486,7 +486,7 @@ const privacyPolicy = () => {
         your experience.</p>
       <p>Cookies are small text files stored on a visitor’s web browser and applications. Cookies are often used to make
         browsing easier by performing functions such as saving passwords and maintaining lists of personal preferences
-        regarding the use of the website. AI Me’s website and digital properties may use the following types of
+        regarding the use of the website. PopChat ’s website and digital properties may use the following types of
         cookies.</p>
       <ul>
         <li>Necessary Cookies - These cookies are essential to enable you to browse our website, applications, and

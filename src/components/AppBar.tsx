@@ -21,7 +21,7 @@ const AppBar = (props: Props) => {
         </div>
         <div className='sm:flex flex-1 flex-row justify-between items-center  hidden max-w-[400px] mx-4'>
           <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 justify-center'
-            onClick={() => router.push('/why-aime')}>WHY AI ME</div>
+            onClick={() => router.push('/')}>WHY PopChat</div>
           <div className='tracking-wide text-[16px] cursor-pointer flex flex-1 mx-4 justify-center'
             onClick={() => router.push('/pricing')}>PRICING</div>
           <div className='relative'>

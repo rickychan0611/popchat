@@ -7,12 +7,12 @@ const Terms = () => {
       <h1 className='my-8 text-center'>Terms</h1>
       <div >
         <p>
-          We are AI Me, and our office is in British Columbia, Canada. Please carefully
+          We are PopChat , and our office is in British Columbia, Canada. Please carefully
           read the Terms and Conditions of use for our website, which include but are
           not limited to the website listed below:
           <a href="http://www..aimeai.live">http://www..aimeai.live</a> This document
           stipulates the terms and conditions under which DIGIPAL TECH INC. (hereafter
-          referred to as &quot;AI Me&quot; or &quot;we&quot; or &quot;our&quot;)
+          referred to as &quot;PopChat &quot; or &quot;we&quot; or &quot;our&quot;)
           provides services on its website, including but not limited to the websites
           listed above. In this document, the terms &quot;you&quot; or &quot;your&quot;
           refer to you, any individual or entity you represent, and their affiliates, as
@@ -191,11 +191,11 @@ const Terms = () => {
         </p>
         <p>
           When you upload content to the website, including content uploaded by models,
-          you grant AI Me, its affiliates, and agents an irrevocable right to use these
+          you grant PopChat , its affiliates, and agents an irrevocable right to use these
           contents, including but not limited to usernames, videos, images, and sounds.
-          The content you upload may be publicly displayed on the AI Me website as well
+          The content you upload may be publicly displayed on the PopChat website as well
           as third-party websites and marketing materials. All uploaded content will
-          adhere to AI Me's privacy policy and terms of service, as well as any
+          adhere to PopChat 's privacy policy and terms of service, as well as any
           applicable third-party website terms of service.
         </p>
         <br /><p><strong>6. User/Model Code of Conduct</strong></p>
@@ -462,7 +462,7 @@ const Terms = () => {
           Models can choose whether to allow users to record their performances in the
           account settings. Before each live session, models need to confirm whether
           this feature is activated. By enabling this feature, models agree to audio and
-          video recordings of their performances by users and AI Me, and AI Me may use
+          video recordings of their performances by users and PopChat , and PopChat may use
           these recordings for news, promotions, advertisements, and other purposes.
         </p>
         <p>
@@ -476,7 +476,7 @@ const Terms = () => {
           When models enable the recording feature, they waive all rights to payments or
           royalties related to these recordings (excluding any tokens that users may
           pay). Models also relinquish any right to review or approve any photos,
-          videos, or audio taken by AI Me or users. Furthermore, models release AI Me,
+          videos, or audio taken by PopChat or users. Furthermore, models release PopChat ,
           its employees, and all individuals involved in the recording, filming, or
           publishing processes from any liability in these activities.
         </p>

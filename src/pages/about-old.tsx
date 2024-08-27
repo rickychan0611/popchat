@@ -6,10 +6,10 @@ const About = () => {
     <div className="bg-white w-full max-w-6xl mx-auto py-20 px-4">
       <h1 className='my-8 text-center'>About</h1>
       <p>
-        Digipal, known as <b>AI Me</b>, is an innovative AI startup based in Canada, leading the charge as the first AI-powered live streaming platform globally. At its core, AI Me is about using AI to sculpt your ideal self, transcending barriers related to appearance, age, and accent for unrestricted audience interaction. For hosts who shy away from the camera or those who prioritize privacy, AI live streaming emerges as a novel choice. AI hosts can define vibrant personas and appearances, liberating themselves to showcase their authentic self more freely. Thanks to advancements in AI digital beings and face-swapping technology, we're turning this vision into reality, particularly shining in realms like role-playing and real-time streaming.
+        Digipal, known as <b>PopChat </b>, is an innovative AI startup based in Canada, leading the charge as the first AI-powered live streaming platform globally. At its core, PopChat is about using AI to sculpt your ideal self, transcending barriers related to appearance, age, and accent for unrestricted audience interaction. For hosts who shy away from the camera or those who prioritize privacy, AI live streaming emerges as a novel choice. AI hosts can define vibrant personas and appearances, liberating themselves to showcase their authentic self more freely. Thanks to advancements in AI digital beings and face-swapping technology, we're turning this vision into reality, particularly shining in realms like role-playing and real-time streaming.
       </p>
       <p>
-        AI Me represents the real you, not a fictional character, by manifesting the best version of yourself through an AI Avatar.
+        PopChat represents the real you, not a fictional character, by manifesting the best version of yourself through an AI Avatar.
       </p>
       <p>
         <span>Our</span> <b>Mission:</b> To transform you into your dream self with AI.
@@ -20,7 +20,7 @@ const About = () => {
       </p>
       <h3>AI Face:</h3>
       <p>
-        Choose the face that represents you, whether it's a striking beauty or a charming cat, and let it mimic your real-life expressions, movements, and words seamlessly. AI Me is here for everyone – the introverted singer, the private chef – offering a stage where your skills can shine without compromising your privacy.
+        Choose the face that represents you, whether it's a striking beauty or a charming cat, and let it mimic your real-life expressions, movements, and words seamlessly. PopChat is here for everyone – the introverted singer, the private chef – offering a stage where your skills can shine without compromising your privacy.
       </p>
       <br />
       <p>Unleash Talent, Unbound by Appearance</p>

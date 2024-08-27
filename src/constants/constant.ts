@@ -1,4 +1,4 @@
-export const H5_URL = "https://popchat-live.web.app"
+export const H5_URL = "https://pop-chat.web.app"
 
 export const Android_Download = "https://onlyforyou.live/api/android/download"
 

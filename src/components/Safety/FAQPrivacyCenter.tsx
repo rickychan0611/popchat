@@ -98,12 +98,6 @@ const FAQPrivacyCenter = (props: Props) => {
             </p>
           </section>
 
-          <section className="mb-8">
-            <h3 className="mb-4">How to stop receiving notifications</h3>
-            <p className="mb-4">
-              You can unsubscribe from a notification by following the instructions contained within the notification or by tapping:
-            </p>
-          </section>
         </div>
       </div>
     </div>

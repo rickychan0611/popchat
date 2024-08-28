@@ -13,7 +13,7 @@ const PrivacyPolicy = (props: Props) => {
 
           <h2>1. Introduction</h2>
           <p>
-            This is the Privacy Policy of Clash Arts HK Limited, (“PopChat”,
+            This is the Privacy Policy of “PopChat”, (“PopChat”,
             “us”, “we”, or “our”) which is incorporated into and is subject to
             our Terms of Service. Please read on to learn more about our data
             handling practices. By visiting our website{" "}

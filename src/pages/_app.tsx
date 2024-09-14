@@ -28,22 +28,33 @@ export default function App({ Component, pageProps }: Props) {
   const getLayout = Component.getLayout ?? ((page: ReactNode) => page);
 
   const router = useRouter();
+  const { query, isReady } = router;
 
   useEffect(() => {
-    const userAgent = navigator.userAgent;
+    if (isReady) {
+      const from = query.from;
+      const from_a = query.from_a;
+      const from_m = query.from_m;
+      if (from || from_a || from_m) {
+        from && router.push(H5_URL + `/regist?from=${from}`);
+        from_a && router.push(H5_URL + `/regist?from_a=${from_a}`);
+        from_m && router.push(H5_URL + `/regist?from_m=${from_m}`);
+      } else {
+        const userAgent = navigator.userAgent;
 
-    // Detect platform
-    let platform = "Unknown";
+        // Detect platform
+        let platform = "Unknown";
 
-    if (/android/i.test(userAgent)) {
-      platform = "Android";
-    } else if (/iPad|iPhone|iPod/.test(userAgent)) {
-      platform = "iOS";
+        if (/android/i.test(userAgent)) {
+          platform = "Android";
+        } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+          platform = "iOS";
+        }
+
+        if (platform === "iOS" || platform === "Android") router.push(H5_URL);
+      }
     }
-
-    if (platform === "iOS" || platform === "Android")  router.push(H5_URL)
-    
-  }, []);
+  }, [isReady]);
 
   return (
     <>

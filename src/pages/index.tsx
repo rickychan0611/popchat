@@ -389,7 +389,7 @@ const Home = () => {
           >
             <div className=" cursor-pointer bg-white text-black py-1 px-6 rounded-full flex flex-col justify-center items-center">
               <div className="">Download</div>
-              <div className="text-[14px] mt-[-4px]">Streamy Assistant</div>
+              <div className="text-[10px] mt-[-2px]">Streamy Assistant</div>
             </div>
           </a>
         </div>

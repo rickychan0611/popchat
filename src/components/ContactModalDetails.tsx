@@ -6,7 +6,7 @@ type Props = {
 };
 
 const ContactModalDetails = ({ setOpen }: Props) => {
-  
+
   return (
     <>
       <div
@@ -32,31 +32,20 @@ const ContactModalDetails = ({ setOpen }: Props) => {
             <section className="mb-6">
               <h2 className="text-xl font-bold text-gray-700 mb-2">Billing</h2>
               <div className="text-gray-600 mb-1">
-                For any billing questions including refunds on a case-by-case
-                basis, please contact our billing partner, CCBill:
+                For any billing questions including refunds on a case-by-case basis, please contact our billing partner,
+                CCBill via <a
+                  href="https://ccbill.com/contact"
+                  className="text-blue-500 underline"
+                  target="_blank"
+                >https://ccbill.com/contact</a>, phone 1.888.596.9279,
+                or eamil at <a
+                  href="mailto:consumersupport@ccbill.com"
+                  className="text-blue-500 underline"
+                >
+                  consumersupport@ccbill.com
+                </a>
               </div>
-              <ul className="list-disc list-inside text-gray-600 ">
-                <li className="text-[16px]">
-                  Website:{" "}
-                  <a
-                    href="https://ccbill.com/contact"
-                    className="text-blue-500 underline"
-                    target={"_blank"}
-                  >
-                    https://ccbill.com/contact
-                  </a>
-                </li>
-                <li className="text-[16px]">Phone: 1.888.596.9279</li>
-                <li className="text-[16px]">
-                  Email:{" "}
-                  <a
-                    href="mailto:consumersupport@ccbill.com"
-                    className="text-blue-500 underline"
-                  >
-                    consumersupport@ccbill.com
-                  </a>
-                </li>
-              </ul>
+
             </section>
 
             {/* Complaints Section */}
@@ -129,7 +118,7 @@ const ContactModalDetails = ({ setOpen }: Props) => {
                 including any relevant screenshots or descriptions of the issue.
               </div>
             </section>
-            <img src={'/map.png'} alt="map" className="mt-8"/>
+            <img src={'/map.png'} alt="map" className="mt-8" />
           </div>
         </div>
       </div>

@@ -17,7 +17,6 @@ const Home = () => {
   const [openContactDetails, setOpenContactDetails] = useState(false);
   const [openQR, setOpenQR] = useState(false);
   const [openDownloadQR, setOpenDownloadQR] = useState(false);
-
   return (
     <div className="bg-white min-h-screen w-auto font-[poppins] ">
       <ContactModal open={openContact} setOpen={setOpenContact} type={0} />

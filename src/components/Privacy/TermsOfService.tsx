@@ -7,9 +7,7 @@ const TermsOfService = (props: Props) => {
     <div className="pt-[240px] bg-white min-h-screen font-[poppins]">
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
-          <h2 className="">
-          Non-binding summary of ToS
-          </h2>
+          <h2 className="">Non-binding summary of ToS</h2>
 
           <p>
             This is an overview of some of the important rights and obligations
@@ -165,6 +163,15 @@ const TermsOfService = (props: Props) => {
             that you have posted on the Services, and/or prohibit you from using
             or accessing the Products (or any part of the Services) if it
             believes that you do not fulfill the eligibility requirements above.
+          </p>
+          <p>
+            2.5 Due to limited resources, only a select few can become hosts.
+            You understand and agree that we have the discretion to review and
+            reject host applications, and you may be denied the opportunity to
+            become a host. You will not have the right to sue or file a
+            complaint against the platform if your application is rejected.
+            However, this will not affect your ability to use the platform as a
+            regular user.
           </p>
 
           <h2>3. Description of the App and the Services</h2>
@@ -1013,7 +1020,10 @@ const TermsOfService = (props: Props) => {
               the associated services will be automatically terminated. If you
               encounter any issues or need assistance, please contact our
               customer service team at{" "}
-              <a href="mailto:support@popchat.live" className="text-blue-500">support@popchat.live</a>.
+              <a href="mailto:support@popchat.live" className="text-blue-500">
+                support@popchat.live
+              </a>
+              .
             </p>
           </ul>
         </div>

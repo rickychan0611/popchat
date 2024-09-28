@@ -36,6 +36,13 @@ const Safety = (props: Props) => {
               Legal Bases
               <div className="w-10 h-1 mt-4"></div>
             </div>
+            <div
+              className=" cursor-pointer flex items-center flex-col"
+              onClick={() => router.push("/privacy-center/legal-bases")}
+            >
+              Content Consent Agreement
+              <div className="w-10 h-1 mt-4"></div>
+            </div>
           </div>
         </div>
       </div>

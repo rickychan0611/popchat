@@ -105,6 +105,8 @@ const PopChatFooter = (props: Props) => {
                   onClick={() => router.push("/privacy-center/terms")}>Terms of Service</div>
                 <div className=" underline cursor-pointer"
                   onClick={() => router.push("/privacy-center/privacy-policy")}>Privacy Policy</div>
+                <div className=" underline cursor-pointer"
+                  onClick={() => router.push("/privacy-center/content-consent")}>Content Consent Agreement</div>
               </div>
             </div>
           </div>

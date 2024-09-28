@@ -31,11 +31,19 @@ const TermsIndex = (props: Props) => {
             </div>
             <div
               className=" cursor-pointer flex items-center flex-col"
+              onClick={() => router.push("/privacy-center/content-consent")}
+            >
+              Content Consent Agreement
+              <div className="w-10 h-1 mt-4"></div>
+            </div>
+            <div
+              className=" cursor-pointer flex items-center flex-col"
               onClick={() => router.push("/privacy-center/legal-bases")}
             >
               Legal Bases
               <div className="w-10 h-1 mt-4"></div>
             </div>
+           
           </div>
         </div>
       </div>

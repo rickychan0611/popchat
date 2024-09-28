@@ -1,5 +1,5 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
-import { Android_Download, Streamy_Download } from "@/constants/constant";
+import { Android_Download, H5_URL, Streamy_Download } from "@/constants/constant";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
@@ -17,15 +17,14 @@ const Home = () => {
   const [openContactDetails, setOpenContactDetails] = useState(false);
   const [openQR, setOpenQR] = useState(false);
   const [openDownloadQR, setOpenDownloadQR] = useState(false);
-
   return (
     <div className="bg-white min-h-screen w-auto font-[poppins] ">
       <ContactModal open={openContact} setOpen={setOpenContact} type={0} />
-      {openContactDetails && <ContactModalDetails  setOpen={setOpenContactDetails}  />}
+      {openContactDetails && <ContactModalDetails setOpen={setOpenContactDetails} />}
 
       <div className="min-w-[1200px] max-w-[1380px] mx-auto relative">
         {/* app bar */}
-        <div className="min-w-[1200px] max-w-[1380px] mx-auto absolute top-6 flex flex-row justify-between items-center px-16 z-50">
+        <div className="min-w-[1200px] max-w-[1380px] mx-auto absolute top-6 flex flex-row justify-between items-center pl-16 z-50">
           <div
             className="flex flex-row gap-5 cursor-pointer "
             style={{ zIndex: 1000 }}
@@ -75,7 +74,7 @@ const Home = () => {
               />
             </a>
 
-            <a
+            {/* <a
               href="/safety-center/guidelines"
               target="_blank"
               className="text-black no-underline"
@@ -83,7 +82,19 @@ const Home = () => {
               <div className="cursor-pointer ml-4 flex flex-row justify-center items-center border border-purple-100 shadow-lg shadow-purple-100 rounded-full py-1 px-6">
                 Community
               </div>
-            </a>
+            </a> */}
+
+            <div className='flex flex-row justify-end items-center gap-4 ml-8'>
+
+              <div onClick={() => router.push(H5_URL + "/login?origin=pc")} className="cursor-pointer text-center">
+                LOG IN</div>
+              <div className='px-4 py-1 rounded cursor-pointer text-center text-white'
+                onClick={() => router.push(H5_URL + "/regist?origin=pc")}
+                style={{
+                  backgroundImage: "linear-gradient(to right, #FF1CF7, #00F0FF)",
+                }}>Sign up</div>
+            </div>
+
           </div>
         </div>
 
@@ -378,7 +389,7 @@ const Home = () => {
           >
             <div className=" cursor-pointer bg-white text-black py-1 px-6 rounded-full flex flex-col justify-center items-center">
               <div className="">Download</div>
-              <div className="text-[14px] mt-[-4px]">Streamy Assistant</div>
+              <div className="text-[10px] mt-[-2px]">Streamy Assistant</div>
             </div>
           </a>
         </div>

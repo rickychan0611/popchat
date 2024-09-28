@@ -35,11 +35,18 @@ export default function App({ Component, pageProps }: Props) {
       const from = query.from;
       const from_a = query.from_a;
       const from_m = query.from_m;
+      const user = query.user;
       if (from || from_a || from_m) {
         from && router.push(H5_URL + `/regist?from=${from}`);
         from_a && router.push(H5_URL + `/regist?from_a=${from_a}`);
         from_m && router.push(H5_URL + `/regist?from_m=${from_m}`);
-      } else {
+      }
+
+      else if (user) {
+        router.push(H5_URL + `/personinfo?id=${user}`)
+      } 
+      
+      else {
         const userAgent = navigator.userAgent;
 
         // Detect platform

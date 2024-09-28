@@ -8,7 +8,7 @@ const TermsOfService = (props: Props) => {
       <div className="w-screen min-w-[800px] max-w-[1000px] mx-auto relative overflow-auto">
         <div className="">
           <h2 className="">
-          Non-binding summary of ToS
+            Non-binding summary of ToS
           </h2>
 
           <p>
@@ -86,12 +86,8 @@ const TermsOfService = (props: Props) => {
 
           <h2>1. Introduction</h2>
           <p>
-            1.1 Please read carefully the following provisions of these Terms
-            and Conditions of Use (“Terms”) to ensure that you understand its
-            contents before you use our software programs and related
-            documentation (the “App”) and any of the services enabled by the App
-            (the “Services”). App and Services are referred to together as
-            (“Products”).
+            1.1 Please read carefully the following provisions of these Terms and Conditions of Use (“Terms”) to ensure that you understand its contents before you use our software programs and related documentation (the “App”) and any of the services enabled by the App (the “Services”). App and Services are referred to together as (“Products”)
+            <br /><br />By visiting our website https://www.popchat.live (“Site”), or https://pop-chat.web.app ("H5") or accessing or using our PopChat mobile application (“App”) or all of the services available or related to therein (collectively referred to in this Privacy Policy as the “Service(s)”)
           </p>
           <p>
             1.2 Should you require any further information or technical support,
@@ -509,6 +505,20 @@ const TermsOfService = (props: Props) => {
             user’s actual information or physical appearance, or may violate
             your or third parties’ personal or intellectual property rights.
           </p>
+
+          <h3>
+            Pre-screening process</h3>
+          <p>
+            5.12 All user-uploaded content must undergo a pre-screening process before being published. The process is as follows:</p>
+          <ol style={{ listStyleType: 'decimal' }}>
+            <li>Agree to the <a className="text-blue-500 underline">Content Consent Agreement</a> during the sign-up process.</li>
+            <li>Upload your content.</li>
+            <li>Wait for review; this typically takes ten minutes or longer. During busy periods, it may take a few days.</li>
+            <li>Ensure your content is legal and complies with the <a className="text-blue-500 underline" href="/safety-center/guidelines/">Community Guidelines</a> and <a className="text-blue-500 underline" href="/privacy-center/terms">Terms of Service</a>.</li>
+            <li>Once approved, your content will be displayed in the corresponding location.</li>
+            <li>If your content is rejected, you will receive a notification through the system.</li>
+          </ol>
+
 
           <h2>6. Your Data</h2>
           <p>

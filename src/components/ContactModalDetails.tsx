@@ -118,7 +118,8 @@ const ContactModalDetails = ({ setOpen }: Props) => {
                 including any relevant screenshots or descriptions of the issue.
               </div>
             </section>
-            <img src={'/map.png'} alt="map" className="mt-8" />
+            <div className="mt-8 text-gray-600">PopChat (Digipal Tech Inc.)</div>
+            <img src={'/map.png'} alt="map" className="mt-1" />
           </div>
         </div>
       </div>

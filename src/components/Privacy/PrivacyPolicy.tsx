@@ -18,7 +18,8 @@ const PrivacyPolicy = (props: Props) => {
             our Terms of Service. Please read on to learn more about our data
             handling practices. By visiting our website{" "}
             <a href="https://www.popchat.live">https://www.popchat.live</a>{" "}
-            (“Site”), or accessing or using our PopChat mobile application
+            (“Site”), or <a href="https://pop-chat.web.app">https://pop-chat.web.app</a>{" "}(“H5”),
+             or accessing or using our PopChat mobile application
             (“App”) or all of the services available or related to therein
             (collectively referred to in this Privacy Policy as the
             “Service(s)”), you agree with the terms of this Privacy Policy. If

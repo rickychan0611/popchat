@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -92,7 +93,7 @@ const TermsOfService = (props: Props) => {
           <p>
             1.2 Should you require any further information or technical support,
             please send an email to{" "}
-            <a href="mailto:support@popchat.live">support@popchat.live</a>.
+            <Link href="mailto:support@popchat.live">support@popchat.live</Link>.
           </p>
           <p>
             1.3 You may use the Products only in compliance with these Terms and
@@ -520,10 +521,10 @@ const TermsOfService = (props: Props) => {
           <p>
             5.12 All user-uploaded content must undergo a pre-screening process before being published. The process is as follows:</p>
           <ol style={{ listStyleType: 'decimal' }}>
-            <li>Agree to the <a className="text-blue-500 underline">Content Consent Agreement</a> during the sign-up process.</li>
+            <li>Agree to the <Link href="/privacy-center/content-consent" className="text-blue-500 underline">Content Consent Agreement</Link> during the sign-up process.</li>
             <li>Upload your content.</li>
             <li>Wait for review; this typically takes ten minutes or longer. During busy periods, it may take a few days.</li>
-            <li>Ensure your content is legal and complies with the <a className="text-blue-500 underline" href="/safety-center/guidelines/">Community Guidelines</a> and <a className="text-blue-500 underline" href="/privacy-center/terms">Terms of Service</a>.</li>
+            <li>Ensure your content is legal and complies with the <Link className="text-blue-500 underline" href="/safety-center/guidelines/">Community Guidelines</Link> and <Link className="text-blue-500 underline" href="/privacy-center/terms">Terms of Service</Link>.</li>
             <li>Once approved, your content will be displayed in the corresponding location.</li>
             <li>If your content is rejected, you will receive a notification through the system.</li>
           </ol>
@@ -1032,9 +1033,9 @@ const TermsOfService = (props: Props) => {
               the associated services will be automatically terminated. If you
               encounter any issues or need assistance, please contact our
               customer service team at{" "}
-              <a href="mailto:support@popchat.live" className="text-blue-500">
+              <Link href="mailto:support@popchat.live" className="text-blue-500">
                 support@popchat.live
-              </a>
+              </Link>
               .
             </p>
           </ul>

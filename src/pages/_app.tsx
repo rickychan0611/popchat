@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }: Props) {
       }
 
       else if (user) {
-        router.push(H5_URL + `/personinfo?id=${user}`)
+        router.push(H5_URL + `/personinfo?user=${user}`)
       } 
       
       else {

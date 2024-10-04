@@ -33,20 +33,19 @@ export default function App({ Component, pageProps }: Props) {
   useEffect(() => {
     if (isReady) {
       const from = query.from;
-      const from_a = query.from_a;
-      const from_m = query.from_m;
+      // const from_a = query.from_a;
+      // const from_m = query.from_m;
       const user = query.user;
-      if (from || from_a || from_m) {
-        from && router.push(H5_URL + `/mcn-refer?from=${from}`);
-        from_a && router.push(H5_URL + `/mcn-refer?from_a=${from_a}`);
-        from_m && router.push(H5_URL + `/mcn-refer?from_m=${from_m}`);
-      }
-
-      else if (user) {
-        router.push(H5_URL + `/personinfo?user=${user}`)
-      } 
-      
-      else {
+      if (
+        from
+        // || from_a || from_m)
+      ) {
+        router.push(H5_URL + `/mcn-refer?from=${from}`);
+        // from_a && router.push(H5_URL + `/mcn-refer?from_a=${from_a}`);
+        // from_m && router.push(H5_URL + `/mcn-refer?from_m=${from_m}`);
+      } else if (user) {
+        router.push(H5_URL + `/personinfo?user=${user}`);
+      } else {
         const userAgent = navigator.userAgent;
 
         // Detect platform

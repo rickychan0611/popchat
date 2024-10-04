@@ -399,6 +399,7 @@ const Home = () => {
           <div>609 West Hastings，Vancouver, BC, Canada V6B 4W4</div>
         </div>
       </div>
+      <div className="fixed bottom-2 right-4 z-50 text-white text-[8px]">10-4-24</div>
     </div>
   );
 };

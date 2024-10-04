@@ -37,9 +37,9 @@ export default function App({ Component, pageProps }: Props) {
       const from_m = query.from_m;
       const user = query.user;
       if (from || from_a || from_m) {
-        from && router.push(H5_URL + `/regist?from=${from}`);
-        from_a && router.push(H5_URL + `/regist?from_a=${from_a}`);
-        from_m && router.push(H5_URL + `/regist?from_m=${from_m}`);
+        from && router.push(H5_URL + `/mcn-refer?from=${from}`);
+        from_a && router.push(H5_URL + `/mcn-refer?from_a=${from_a}`);
+        from_m && router.push(H5_URL + `/mcn-refer?from_m=${from_m}`);
       }
 
       else if (user) {

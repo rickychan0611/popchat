@@ -1,5 +1,6 @@
 import React from "react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
   setOpen: any;
@@ -119,7 +120,7 @@ const ContactModalDetails = ({ setOpen }: Props) => {
               </div>
             </section>
             <div className="mt-8 text-gray-600">PopChat (Digipal Tech Inc.)</div>
-            <img src={'/map.png'} alt="map" className="mt-1" />
+            <Image src={'/map.png'} alt="map" className="mt-1" />
           </div>
         </div>
       </div>

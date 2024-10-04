@@ -1033,9 +1033,9 @@ const TermsOfService = (props: Props) => {
               the associated services will be automatically terminated. If you
               encounter any issues or need assistance, please contact our
               customer service team at{" "}
-              <a href="mailto:support@popchat.live" className="text-blue-500">
+              <Link href="mailto:support@popchat.live" className="text-blue-500">
                 support@popchat.live
-              </a>
+              </Link>
               .
             </p>
           </ul>

@@ -51,7 +51,7 @@ const ResponsiveImage = ({ src, className }: { src: string, className?: string }
           priority
           ref={imageRef}
           src={src}
-          alt="Image"
+          alt="PopChat 1on1 Live Imaage"
           fill
           sizes="100%"
           onLoad={handleImageLoad}

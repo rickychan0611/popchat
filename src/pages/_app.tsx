@@ -6,6 +6,7 @@ import { Noto_Sans, Noto_Serif } from "next/font/google";
 import { Android_Download, H5_URL } from "@/constants/constant";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Head from "next/head";
 
 type Page<P = {}> = NextPage<P> & {
   getLayout?: (page: ReactNode) => ReactNode;
@@ -64,6 +65,10 @@ export default function App({ Component, pageProps }: Props) {
 
   return (
     <>
+      <Head>
+        <title>PopChat</title> {/* Title for SEO */}
+      </Head>
+
       <style jsx global>{`
         html {
           font-family: ${noto.style.fontFamily}, ${notoSerif.style.fontFamily};

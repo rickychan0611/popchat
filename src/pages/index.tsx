@@ -22,7 +22,7 @@ const Home = () => {
     <>
       <Head>
         <title>PopChat - 1-on-1 Private Chat & Live Streaming</title>
-        <meta name="description" content="PopChat Live, Join PopChat for 1-on-1 private chat, live streaming chat with beautiful women, and exclusive private video chat rooms." /> 
+        <meta name="description" content="PopChat Live, Join PopChat for 1-on-1 private chat, live streaming chat with beautiful women, and exclusive private video chat rooms." />
       </Head>
 
       <div className="bg-white min-h-screen w-auto font-[poppins] ">
@@ -406,9 +406,9 @@ const Home = () => {
           <div className="text-[12px] text-center my-8">
             <div>@ Copyright PopChat {moment().format("YYYY")}</div>
             <div>609 West Hastings，Vancouver, BC, Canada V6B 4W4</div>
+            <div className="z-50 text-white text-[8px] mt-3">v1.1.0</div>
           </div>
         </div>
-        <div className="fixed bottom-2 right-4 z-50 text-white text-[8px]">10-4-24</div>
       </div>
     </>
   );

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://popchat.live
+
+# Sitemaps
+Sitemap: https://popchat.live/sitemap.xml

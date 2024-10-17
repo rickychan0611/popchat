@@ -405,8 +405,8 @@ const Home = () => {
 
           <div className="text-[12px] text-center my-8">
             <div>@ Copyright PopChat {moment().format("YYYY")}</div>
-            <div>609 West Hastings，Vancouver, BC, Canada V6B 4W4</div>
-            <div className="z-50 text-white text-[8px] mt-3">v1.1.0</div>
+            <div>609 West Hastings, Vancouver, BC, Canada V6B 4W4</div>
+            <div className="z-50 text-white text-[8px] mt-3">v1.1.1</div>
           </div>
         </div>
       </div>

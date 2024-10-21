@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:dev": "NODE_ENV=development next build",
-    "build:prod": "NODE_ENV=production next build",
+    "build:dev": "cross-env NODE_ENV=development next build",
+    "build:prod": "cross-env NODE_ENV=production next build",
     "start": "next start",
     "postbuild": "next-sitemap",
     "lint": "next lint"
@@ -27,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",

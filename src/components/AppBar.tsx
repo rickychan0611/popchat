@@ -1,4 +1,3 @@
-import { Android_Download, H5_URL } from '@/constants/constant'
 import { Globe, Router } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -9,6 +8,10 @@ type Props = {}
 const AppBar = (props: Props) => {
   const router = useRouter()
   const [open, setOpen] = React.useState(false)
+
+  const H5_URL = process.env.NEXT_PUBLIC_H5_URL + "";
+  const Android_Download = process.env.NEXT_PUBLIC_Android_Download + "";
+
   return (
     <div className='fixed flex flex-1 w-full h-[80px] flex-row justify-between items-center p-2 z-50 text-white bg-[#2B2E39]'
     >

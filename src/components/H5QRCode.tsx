@@ -1,16 +1,13 @@
 import React from 'react';
 import QRCode from 'qrcode.react';
-import { H5_URL } from '@/constants/constant';
-
-
 
 const H5QRCode = () => {
 
-  const value = H5_URL
+  const H5_URL = process.env.NEXT_PUBLIC_H5_URL + "";
 
   return (
     <div className="flex justify-center">
-      <QRCode value={value} size={148} level={'M'} />
+      <QRCode value={H5_URL} size={148} level={'M'} />
     </div>
   );
 };

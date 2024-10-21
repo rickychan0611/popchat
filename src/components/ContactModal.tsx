@@ -3,7 +3,6 @@ import ModalBackdrop from './ModalBackdrop'
 import axios from 'axios'
 import { X } from 'lucide-react'
 import Spinner from './Spinner'
-import { apiUrl } from '@/constants/constant'
 
 type Props = {
   open: boolean,
@@ -12,7 +11,7 @@ type Props = {
 }
 
 const ContactModal = ({ open, setOpen, type }: Props) => {
-
+  const apiUrl = process.env.NEXT_PUBLIC_apiUrl + "";
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');

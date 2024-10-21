@@ -1,4 +1,3 @@
-import { Android_Download } from '@/constants/constant'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
@@ -7,7 +6,7 @@ import ContactModal from './ContactModal'
 type Props = {}
 
 const Footer = (props: Props) => {
-
+  const Android_Download = process.env.NEXT_PUBLIC_Android_Download + "";
   const router = useRouter()
   const [openContact, setOpenContact] = useState(false)
   const [openAffiliate, setOpenAffiliate] = useState(false)

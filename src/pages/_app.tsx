@@ -3,7 +3,6 @@ import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import { ReactNode } from "react";
 import { Noto_Sans, Noto_Serif } from "next/font/google";
-import { Android_Download, H5_URL } from "@/constants/constant";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from "next/head";
@@ -31,6 +30,8 @@ export default function App({ Component, pageProps }: Props) {
   const router = useRouter();
   const { query, isReady } = router;
 
+  const H5_URL = process.env.NEXT_PUBLIC_H5_URL + "";
+
   useEffect(() => {
     if (isReady) {
       const from = query.from;
@@ -41,7 +42,7 @@ export default function App({ Component, pageProps }: Props) {
         from
         // || from_a || from_m)
       ) {
-        router.push(H5_URL + `/mcn-refer?from=${from}`);
+        router.push(H5_URL + `?from=${from}`);
         // from_a && router.push(H5_URL + `/mcn-refer?from_a=${from_a}`);
         // from_m && router.push(H5_URL + `/mcn-refer?from_m=${from_m}`);
       } else if (user) {

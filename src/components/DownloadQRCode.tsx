@@ -1,11 +1,9 @@
 import React from 'react';
 import QRCode from 'qrcode.react';
-import { Android_Download, H5_URL } from '@/constants/constant';
-
-
 
 const DownloadQRCode = () => {
-
+  const H5_URL = process.env.NEXT_PUBLIC_H5_URL + "";
+  const Android_Download = process.env.NEXT_PUBLIC_Android_Download + "";
   const value = Android_Download
 
   return (

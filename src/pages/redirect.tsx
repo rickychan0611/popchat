@@ -1,4 +1,3 @@
-import { Android_Download } from '@/constants/constant';
 import { getLayout } from '@/layouts/DefaultLayout';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -10,7 +9,7 @@ const DeviceDetector = () => {
 
   useEffect(() => {
     const userAgent = navigator.userAgent;
-
+    const Android_Download = process.env.NEXT_PUBLIC_Android_Download + "";
     // Detect platform
     let platform = 'Unknown';
     if (/android/i.test(userAgent)) {

@@ -1,5 +1,3 @@
-import { Android_Download, H5_URL } from "@/constants/constant";
-import { Globe, Router } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
@@ -8,7 +6,7 @@ type Props = {};
 
 const PrivacyAppBar = (props: Props) => {
   const router = useRouter();
-  const [open, setOpen] = React.useState(false);
+
   return (
     <div className="z-30 bg-white fixed flex flex-row justify-between items-center w-screen ">
       <div className="w-full max-w-[1400px] mx-auto p-6 relative">

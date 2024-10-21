@@ -1,5 +1,4 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
-import { Android_Download, H5_URL, Streamy_Download } from "@/constants/constant";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
@@ -18,6 +17,10 @@ const Home = () => {
   const [openContactDetails, setOpenContactDetails] = useState(false);
   const [openQR, setOpenQR] = useState(false);
   const [openDownloadQR, setOpenDownloadQR] = useState(false);
+
+  const H5_URL = process.env.NEXT_PUBLIC_H5_URL + "";
+  const Streamy_Download = process.env.NEXT_PUBLIC_Streamy_Download + "";
+
   return (
     <>
       <Head>

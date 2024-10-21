@@ -1,5 +1,3 @@
-import { Android_Download, H5_URL } from "@/constants/constant";
-import { Globe, Router } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";

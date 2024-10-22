@@ -1,6 +1,6 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import moment from "moment";
 import ContactModal from "@/components/ContactModal";

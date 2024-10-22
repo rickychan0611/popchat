@@ -4,6 +4,7 @@ import ContactModal from "../components/ContactModal";
 import ContactModalDetails from "../components/ContactModalDetails";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Landing = () => {
   const router = useRouter();
@@ -79,18 +80,18 @@ const Landing = () => {
           </div>
 
           <div className="gap-2 flex flex-col bg-[#09042F] text-white w-full p-4 max-w-[500px]">
-            <a href="/privacy-center/terms" className="text-white no-underline cursor-pointer">
+            <Link href="/privacy-center/terms" className="text-white no-underline cursor-pointer">
               <div
-              >Terms of Service</div></a>
-            <a href="/privacy-center/privacy-policy" className="text-white no-underline cursor-pointer">
+              >Terms of Service</div></Link>
+            <Link href="/privacy-center/privacy-policy" className="text-white no-underline cursor-pointer">
               <div
-              >Privacy Center</div></a>
-            <a href="/safety-center/tips" className="text-white no-underline cursor-pointer">
+              >Privacy Center</div></Link>
+            <Link href="/safety-center/tips" className="text-white no-underline cursor-pointer">
               <div
-              >Safety Center</div></a>
-            <a href="/safety-center/community" className="text-white no-underline cursor-pointer">
+              >Safety Center</div></Link>
+            <Link href="/safety-center/community" className="text-white no-underline cursor-pointer">
               <div
-              >Community Guidelines</div></a>
+              >Community Guidelines</div></Link>
 
             <hr className="border-stone-800 mt-4 mb-2" />
             <div className="text-[12px] opacity-60"> @ Copyright PopChat {moment().format("YYYY")}</div>

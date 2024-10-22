@@ -1,6 +1,6 @@
 // src/pages/[uid].tsx
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const UserPage = () => {
   const router = useRouter();
@@ -12,7 +12,7 @@ const UserPage = () => {
       router.push(H5_URL + `?from=${query.from}`);
       // router.push(`https://localhost:3001?from=${query.from}`);
       const from = query.from;
-      console.log(from)
+      console.log(from);
     }
   }, [isReady]);
 
@@ -23,5 +23,6 @@ const UserPage = () => {
     </div>
   );
 };
+
 
 export default UserPage;
